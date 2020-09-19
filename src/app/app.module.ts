@@ -5,7 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoreModule } from "./core/core.module";
 import { SharedModule } from "./shared/shared.module";
-import { CulturePortalModule } from "./culture-portal/culture-portal.module";
+import { CultureHomeModule } from "./culture-home/culture-home.module";
+import { AboutAuthorsModule } from "./about-authors/about-authors.module";
+import { PoetsListModule } from "./poets-list/poets-list.module";
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { CulturePortalModule } from "./culture-portal/culture-portal.module";
     AppRoutingModule,
     CoreModule,
     SharedModule,
-    CulturePortalModule
+    CultureHomeModule,
+    AboutAuthorsModule,
+    PoetsListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
