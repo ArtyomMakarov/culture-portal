@@ -2,14 +2,15 @@ export interface author {
   name: string;
   liveTime: string;
   photo: string;
-  biography: Biography[];
+  biography: string;
+  timeline: Timeline[];
   works: Works[];
   galery: Galery[];
   youtube: string;
   activity: Activity[];
 }
 
-interface Biography {
+interface Timeline {
   date: string;
   description: string;
 }

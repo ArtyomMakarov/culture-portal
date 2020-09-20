@@ -10,7 +10,9 @@ export class AuthorsService {
       name: 'Василь Витка',
       liveTime: '	16 мая 1911 - 5 июля 1996 (85 лет)',
       photo: './assets/img/Vitka_Vas.jpg',
-      biography: [
+      biography:
+        'советский белорусский поэт, драматург, критик, переводчик, классик белорусской детской литературы',
+      timeline: [
         {
           date: '16 мая 1911',
           description:
