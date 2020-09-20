@@ -5,7 +5,7 @@ import { author } from '../models/authors-model';
   providedIn: 'root',
 })
 export class AuthorsService {
-  Vitka_Vas: author[] = [
+  author: author[] = [
     {
       name: 'Василь Витка',
       liveTime: '	16 мая 1911 - 5 июля 1996 (85 лет)',
