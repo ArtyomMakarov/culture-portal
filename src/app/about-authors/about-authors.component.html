@@ -1,1 +1,10 @@
-<p>about-authors works!</p>
+<div class="wrapper">
+  <h1 class="header">Our Team</h1>
+  <div class="table">
+    <app-teammate-card
+      class="card"
+      *ngFor="let teammate of teammates"
+      [teammate]="teammate"
+    ></app-teammate-card>
+  </div>
+</div>
