@@ -1,0 +1,35 @@
+[33mcommit 808b595796ca05a0d7f76e09eed9568b538ce4ca[m[33m ([m[1;36mHEAD -> [m[1;32mpoets-data[m[33m)[m
+Author: Yeeeeee1 <52548740+Yeeeeee1@users.noreply.github.com>
+Date:   Sat Sep 19 22:44:57 2020 +0300
+
+    feat: add authors model and service with authors
+
+[33mcommit 5ec99517785af9d0293a23ceb690859393fc3119[m
+Author: Yeeeeee1 <52548740+Yeeeeee1@users.noreply.github.com>
+Date:   Sat Sep 19 22:38:02 2020 +0300
+
+    feat: add authors model and service with authors
+
+[33mcommit 8274e08e5abe91197fae43b0b1ef3dd39a1ee8d0[m
+Author: Yeeeeee1 <52548740+Yeeeeee1@users.noreply.github.com>
+Date:   Sat Sep 19 22:34:04 2020 +0300
+
+    feat: add authors model and service with authors
+
+[33mcommit 4da0dc8b4b2208a7fd552201251167997a754319[m[33m ([m[1;31morigin/poets-data[m[33m)[m
+Author: ArtyomMakarov <Makar6031994@gmail.com>
+Date:   Sat Sep 19 17:35:52 2020 +0300
+
+    Add poets-list and about-authors modules.
+
+[33mcommit 87e7eded569c28cdbe267ad8ae9101709eb0b470[m
+Author: ArtyomMakarov <Makar6031994@gmail.com>
+Date:   Sat Sep 19 00:13:33 2020 +0300
+
+    Create culture-portal project. Add core, shared and culture-portal module.
+
+[33mcommit c353849d36801bcb011ecbb8f564d4bb7d20c464[m
+Author: ArtyomMakarov <36656316+ArtyomMakarov@users.noreply.github.com>
+Date:   Fri Sep 18 23:19:44 2020 +0300
+
+    Initial commit
