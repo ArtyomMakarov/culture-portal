@@ -11,6 +11,7 @@ import { PoetsListModule } from "./poets-list/poets-list.module";
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 // this function for load any static json file from ./assets/i18n
 export function HttpLoaderFactory(http: HttpClient) {
@@ -38,7 +39,8 @@ export function HttpLoaderFactory(http: HttpClient) {
       },
 
       defaultLanguage: 'en'
-    })
+    }),
+    NoopAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
