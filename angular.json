@@ -30,7 +30,9 @@
             "styles": [
               "src/styles.scss",
               "src/theme/colors.scss",
-              "src/theme/fonts.scss"
+              "src/theme/fonts.scss",
+              "./node_modules/mapbox-gl/dist/mapbox-gl.css",
+              "./node_modules/@mapbox/mapbox-gl-geocoder/lib/mapbox-gl-geocoder.css"
             ],
             "scripts": []
           },
