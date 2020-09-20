@@ -6,7 +6,6 @@ import { PageNotFoundComponent } from './core/components/page-not-found/page-not
 import { CulturePageComponent } from './culture-home/page/culture-page.component';
 import { PoetsListComponent } from './poets-list/poets-list.component';
 import { StyleGuideComponent } from './style-guide/style-guide.component';
-import { WorkLogComponent } from './work-log/work-log.component';
 
 const routes: Routes = [
   {
@@ -18,7 +17,6 @@ const routes: Routes = [
     path: 'about-team',
     component: AboutAuthorsComponent,
   },
-  { path: 'work-log', component: WorkLogComponent },
   { path: 'style-guide', component: StyleGuideComponent },
   { path: '', pathMatch: 'full', redirectTo: 'home' },
   { path: '**', component: PageNotFoundComponent },
