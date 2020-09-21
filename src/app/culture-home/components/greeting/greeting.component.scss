@@ -1,0 +1,23 @@
+@import "../../../../theme/colors";
+.header-greetings {
+  background-color: $bg-color;
+  min-height: 300px;
+  &__wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    h1 {
+      font-family: Oswald-SemiBold, 'sans-serif';
+      font-size: 50px;
+      margin: 0 auto;
+      padding: 40px;
+      text-align: center;
+    }
+    p {
+      font-family: Oswald-Regular, 'sans-serif';
+      color: $secondary-black;
+      font-size: 28px;
+      text-align: center;
+      margin: 0;
+    }
+  }
+}

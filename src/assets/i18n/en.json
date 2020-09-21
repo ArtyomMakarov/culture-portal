@@ -1,5 +1,11 @@
 {
     "APP": {
         "TITLE": "Hello angular team"
+    },
+    "CULTURE_HOME": {
+      "GREETINGS": {
+        "H1": "Welcome to CULTURE PORTAL",
+        "P": "Culture Portal is a website about famous belorussian poets. Here you can find information about their biography."
+      }
     }
 }
