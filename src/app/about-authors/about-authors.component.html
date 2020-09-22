@@ -1,10 +1,19 @@
 <div class="wrapper">
-  <h1 class="header">Our Team</h1>
-  <div class="table">
+  <h2 class="header">Our Team</h2>
+  <div class="teammates-table">
     <app-teammate-card
       class="card"
       *ngFor="let teammate of teammates"
       [teammate]="teammate"
     ></app-teammate-card>
+  </div>
+  <h2 class="header worklog-header">Worklog</h2>
+  <div class="worklogs-table">
+    <div class="worklog-item" *ngFor="let worklog of workLogs">
+      <p>{{ worklog.teammateName }}</p>
+      <app-teammate-worklog
+        [worklog]="worklog.worklogItems"
+      ></app-teammate-worklog>
+    </div>
   </div>
 </div>
