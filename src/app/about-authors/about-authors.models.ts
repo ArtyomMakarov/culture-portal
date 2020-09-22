@@ -57,3 +57,47 @@ export const TEAMMATES: ITeammate[] = [
     photoName: 'nikita-belykov',
   },
 ];
+
+export interface IWorklogItem {
+  hours: number;
+  description: string;
+}
+
+export interface ITeammateWorkLog {
+  teammateName: string;
+  worklogItems: IWorklogItem[];
+}
+
+export const TEAMMATES_WORKLOGS: ITeammateWorkLog[] = [
+  {
+    teammateName: 'Pavel Saikov',
+    worklogItems: [
+      { hours: 1, description: 'add routing' },
+      { hours: 5, description: 'about authors page' },
+    ],
+  },
+  {
+    teammateName: 'Tanya',
+    worklogItems: [
+      { hours: 2, description: 'app design' },
+      { hours: 4, description: 'app logo and header' },
+      { hours: 2, description: 'base structure for poets page' },
+      { hours: 1, description: 'search field for poets page' },
+    ],
+  },
+  {
+    teammateName: 'Artsem',
+    worklogItems: [
+      { hours: 0.5, description: 'initialize project repository' },
+      { hours: 3, description: 'add material theme, colors and fonts' },
+      { hours: 1.5, description: 'greetings component' },
+    ],
+  },
+  {
+    teammateName: 'Doge',
+    worklogItems: [
+      { hours: 3, description: 'base app interfaces and info about poets' },
+      { hours: 4, description: 'widget with random author' },
+    ],
+  },
+];
