@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { IAuthor } from '../models/authors-model';
-import { poets } from '../../../poets-data/poets';
+import { poets } from '../../../poets-data/ru/poets';
 
 @Injectable({
   providedIn: 'root',

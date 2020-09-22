@@ -1,4 +1,4 @@
-import { IAuthor } from '../app/core/models/authors-model';
+import { IAuthor } from '../../app/core/models/authors-model';
 
 export const poets: IAuthor[] = [
   {
