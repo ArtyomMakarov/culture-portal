@@ -12,11 +12,13 @@ const optional = { optional: true };
 
 export const slider =
     trigger('routeAnimations', [
-        transition('* => isLeft', slideTo('left')),
-        transition('* => isRight', slideTo('right')),
-        transition('isRight => *', slideTo('left')),
-        transition('isLeft => *', slideTo('right')),
-        transition('* => fade', fade())
+        transition('left => right', slideTo('right')),
+        transition('right => left', slideTo('left')),
+        transition('left => center', slideTo('right')),
+        transition('right => center', slideTo('left')),
+        transition('center => left', slideTo('left')),
+        transition('center => right', slideTo('right')),
+        transition('* <=> fade', fade())
     ]);
 
 function fade() {

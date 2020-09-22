@@ -10,22 +10,22 @@ const routes: Routes = [
   {
     path: 'home',
     component: CulturePageComponent,
-    data: { animation: 'isLeft' }
+    data: { animation: 'left' }
   },
   {
     path: 'poets',
     component: PoetsListComponent,
-    data: { animation: '' }
+    data: { animation: 'center' }
   },
   {
     path: 'about-team',
     component: AboutAuthorsComponent,
-    data: { animation: 'isRight' }
+    data: { animation: 'right' }
   },
   {
     path: '',
     pathMatch: 'full',
-    redirectTo: 'home'
+    redirectTo: 'home',
   },
   {
     path: '**',
