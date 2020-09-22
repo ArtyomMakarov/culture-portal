@@ -1,3 +1,4 @@
+@import "../../../../theme/colors";
 .random-author-widjet {
   width: 80%;
   height: 100%;
@@ -30,13 +31,14 @@
     width: 80px;
   }
   &__name {
-    color: #484745;
+    color: $primary-black;
     margin: 20px;
     text-align: center;
     font-size: 40px;
   }
   &__live-time {
     text-align: center;
+    color: $secondary-black;
   }
   &__learn-more {
     text-transform: uppercase;
@@ -45,18 +47,19 @@
     outline: none;
     border: 0.5px solid #484745;
     color: #484745;
-    background-color: #fff;
+    background-color: $primary-blue;
     text-decoration: none;
   }
   &__inner-link-span {
     display: block;
     padding: 12px 24px;
-  }
-  &__inner-link-span:hover {
-    background-color: #484745;
     color: #fff;
   }
+  &__inner-link-span:hover {
+    background-color: $secondary-blue;
+  }
   &__biography {
+    color: $secondary-black;
     @media screen and (max-width: 500px) {
       display: none;
     }
