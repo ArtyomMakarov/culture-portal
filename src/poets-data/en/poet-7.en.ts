@@ -29,15 +29,15 @@ export const poet: IAuthor = {
   works: [
     {
       date: '1969',
-      work: 'scary gander',
+      work: 'Scary gander',
     },
     {
       date: '1973',
-      work: 'bunch of Rowan',
+      work: 'Bunch of Rowan',
     },
     {
       date: '1976',
-      work: 'living ring',
+      work: 'Living ring',
     },
     {
       date: '1980',

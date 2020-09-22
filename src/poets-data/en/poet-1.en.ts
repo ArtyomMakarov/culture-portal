@@ -52,12 +52,12 @@ export const poet: IAuthor = {
     },
     {
       date: '1957—1974',
-      description: 'chief editor of children\'s magazine "Rainbow»',
+      description: 'Chief editor of children\'s magazine "Rainbow»',
     },
     {
       date: '1974—1987',
       description:
-        'member of the script and editorial Board of the «Belarusfilm» film Studio',
+        'Member of the script and editorial Board of the «Belarusfilm» film Studio',
     },
   ],
   works: [

@@ -27,11 +27,11 @@ export const poet: IAuthor = {
     {
       date: '1994-2000',
       description:
-        'worked as the head of the literary part of the Grodno puppet theater',
+        'Worked as the head of the literary part of the Grodno puppet theater',
     },
     {
       date: '2002',
-      description: 'publicist of the Bialystok monthly «Czasopis»',
+      description: 'Publicist of the Bialystok monthly «Czasopis»',
     },
   ],
   works: [
@@ -41,7 +41,7 @@ export const poet: IAuthor = {
     },
     {
       date: '1994',
-      work: 'the Face of Tutankhamun',
+      work: 'The Face of Tutankhamun',
     },
     {
       date: '1999',

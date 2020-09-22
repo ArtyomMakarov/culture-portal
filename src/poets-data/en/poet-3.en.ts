@@ -36,12 +36,12 @@ export const poet: IAuthor = {
     {
       date: '2013',
       work:
-        'one of the winners of the young critics name Adam Babareka.',
+        'One of the winners of the young critics name Adam Babareka.',
     },
     {
       date: '2015',
       work:
-        'diploma of the winner in the category «Best columnist» based on the results of the XI national competition of printed publications «Zalataya Litsera»',
+        'Diploma of the winner in the category «Best columnist» based on the results of the XI national competition of printed publications «Zalataya Litsera»',
     },
   ],
   galery: [

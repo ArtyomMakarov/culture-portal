@@ -31,7 +31,7 @@ export const poet: IAuthor = {
     },
     {
       date: '2002',
-      description: 'публицист белостокского месячника «Czasopis»',
+      description: 'публицист белостокского месячника «Часопис»',
     },
   ],
   works: [

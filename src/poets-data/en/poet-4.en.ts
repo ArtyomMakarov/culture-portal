@@ -8,7 +8,7 @@ export const poet: IAuthor = {
   timeline: [
     {
       date: '1959',
-      description: 'lives in Minsk',
+      description: 'Lives in Minsk',
     },
     {
       date: '1977',
@@ -29,7 +29,7 @@ export const poet: IAuthor = {
   works: [
     {
       date: '1981',
-      work: 'the weekly «literature and art», the magazine «youth»',
+      work: 'The weekly «literature and art», the magazine «youth»',
     },
     {
       date: '1991',

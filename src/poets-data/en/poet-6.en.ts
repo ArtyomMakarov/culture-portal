@@ -5,7 +5,7 @@ export const poet: IAuthor = {
   liveTime: 'April 23, 1913 - September 18, 2004 (age 91)',
   photo: './assets/img/poets-img/Reles_G.jpg',
   biography:
-    'a Jewish writer, he wrote in Yiddish, Belarusian and Russian.',
+    'A Jewish writer, he wrote in Yiddish, Belarusian and Russian.',
   timeline: [
     {
       date: '1913',
