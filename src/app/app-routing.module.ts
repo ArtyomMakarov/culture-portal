@@ -5,25 +5,37 @@ import { AboutAuthorsComponent } from './about-authors/about-authors.component';
 import { PageNotFoundComponent } from './core/components/page-not-found/page-not-found.component';
 import { CulturePageComponent } from './culture-home/page/culture-page.component';
 import { PoetsListComponent } from './poets-list/poets-list.component';
-import { StyleGuideComponent } from './style-guide/style-guide.component';
 
 const routes: Routes = [
   {
     path: 'home',
     component: CulturePageComponent,
+    data: { animation: 'isLeft' }
   },
-  { path: 'poets', component: PoetsListComponent },
+  {
+    path: 'poets',
+    component: PoetsListComponent,
+    data: { animation: '' }
+  },
   {
     path: 'about-team',
     component: AboutAuthorsComponent,
+    data: { animation: 'isLeft' }
   },
-  { path: 'style-guide', component: StyleGuideComponent },
-  { path: '', pathMatch: 'full', redirectTo: 'home' },
-  { path: '**', component: PageNotFoundComponent },
+  {
+    path: '',
+    pathMatch: 'full',
+    redirectTo: 'home'
+  },
+  {
+    path: '**',
+    component: PageNotFoundComponent,
+    data: { animation: 'fade' }
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
