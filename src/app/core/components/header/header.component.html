@@ -6,16 +6,16 @@
       alt="logo poets"
     />
     <div class="header-nav">
-      <a routerLink="/home" class="nav">HOME</a
-      ><span class="bull">&bull;</span>
-      <a routerLink="/poets" class="nav">POETS</a
-      ><span class="bull">&bull;</span>
+      <a routerLink="/home" class="nav">HOME</a>
+      <span class="bull">&bull;</span>
+      <a routerLink="/poets" class="nav">POETS</a>
+      <span class="bull">&bull;</span>
       <a routerLink="/about-team" class="nav">ABOUT TEAM</a>
     </div>
+    <select class="select-language" #myLanguage (change)="selectLanguage(myLanguage.value)">
+      <option class="option"
+              *ngFor='let language of languageArr'
+              [value]="language">{{language}}</option>
+    </select>
   </nav>
-  <select class="select-language" #myLanguage (change)="selectLanguage(myLanguage.value)">
-    <option class="option"
-            *ngFor='let language of languageArr'
-            [value]="language">{{language}}</option>
-  </select>
 </header>
