@@ -51,9 +51,11 @@ function slideTo(direction) {
                 width: '100%'
             })
         ], optional),
+        
         query(':enter', [
             style({ [direction]: '-100%' })
         ]),
+
         group([
             query(':leave', [
                 animate('0.5s ease', style({ [direction]: '100%' }))

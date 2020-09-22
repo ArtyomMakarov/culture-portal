@@ -20,7 +20,7 @@ const routes: Routes = [
   {
     path: 'about-team',
     component: AboutAuthorsComponent,
-    data: { animation: 'isLeft' }
+    data: { animation: 'isRight' }
   },
   {
     path: '',
