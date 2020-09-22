@@ -1,0 +1,22 @@
+<div class="poets-list">
+  <div class="poets-list__search">
+    <div><input
+      #readWord
+      (input)="inputWords(readWord.value)"
+      type="text"
+      placeholder="Enter name poets"
+    ></div>
+  </div>
+  <div class="poets-list__wrapper">
+    <img [src]="titleImgAuthor" alt="">
+    <ul>
+      <li
+        *ngFor="let author of authorsList |
+        searchAuthor: keyWord"
+        class="list"
+        (mouseover)="selectAuthor($event)"
+      ><span>{{ author.name }}</span>
+      </li>
+    </ul>
+  </div>
+</div>

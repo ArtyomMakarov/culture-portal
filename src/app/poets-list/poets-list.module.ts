@@ -5,9 +5,10 @@ import { PoetsListRoutingModule } from './poets-list-routing.module';
 import { PoetsListComponent } from './poets-list.component';
 import { MapComponent } from './components/map/map.component';
 import { NgxMapboxGLModule } from 'ngx-mapbox-gl';
+import { SearchAuthorPipe } from './pipes/search-author.pipe';
 
 @NgModule({
-  declarations: [PoetsListComponent, MapComponent],
+  declarations: [PoetsListComponent, MapComponent, SearchAuthorPipe],
   imports: [
     CommonModule,
     PoetsListRoutingModule,
