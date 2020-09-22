@@ -1,6 +1,11 @@
 import { Component } from '@angular/core';
 
-import { ITeammate, TEAMMATES } from './about-authors.models';
+import {
+  ITeammate,
+  ITeammateWorkLog,
+  TEAMMATES,
+  TEAMMATES_WORKLOGS,
+} from './about-authors.models';
 
 @Component({
   selector: 'app-about-authors',
@@ -9,4 +14,5 @@ import { ITeammate, TEAMMATES } from './about-authors.models';
 })
 export class AboutAuthorsComponent {
   public teammates: ITeammate[] = TEAMMATES;
+  public workLogs: ITeammateWorkLog[] = TEAMMATES_WORKLOGS;
 }
