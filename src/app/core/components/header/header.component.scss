@@ -1,10 +1,11 @@
+@import  '../../../../theme/colors';
+
 header {
   display: flex;
   justify-content: center;
   padding: 0 20px;
   align-items: center;
-  box-shadow: 0px 6px 31px 0 #9aaab02b;
-  background-color: #fff;
+  background-color: $primary-white;
 
   img {
     height: 100px;
@@ -22,7 +23,7 @@ header {
   }
 
   .header-nav {
-    color: #000;
+    color: $primary-black;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -33,7 +34,7 @@ header {
   }
 
   .bull {
-    color: #f74e10;
+    color: $primary-orange;
     font-size: 16px;
     margin-right: 8px;
     margin-left: 8px;
@@ -43,12 +44,38 @@ header {
   a.nav:hover,
   a.nav:focus {
     cursor: pointer;
-    color: #767e9e;
+    color: $secondary-grey;
     font-weight: bold;
   }
 
   a:-webkit-any-link {
-    color: #000;
+    color: $primary-black;
     text-decoration: none;
+  }
+  .select-language {
+    float: right;
+    width: 50px;
+    height: 30px;
+    font-size: 16px;
+    background: $secondary-grey;
+    border: none;
+    background: $primary-white;
+    border-radius: 5px;
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+    @media screen and (max-width: 600px) {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+    }
+     &:hover {
+      background: $primary-grey;
+    }
+  }
+  select {
+    padding-left: 12px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
 }
