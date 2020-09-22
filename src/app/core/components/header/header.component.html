@@ -2,7 +2,7 @@
   <nav class="header-container">
     <img
       mat-card-image
-      src="../../assets/img/logo_poets2.png"
+      src="assets/img/logo_poets2.png"
       alt="logo poets"
     />
     <div class="header-nav">
@@ -13,4 +13,9 @@
       <a routerLink="/about-team" class="nav">ABOUT TEAM</a>
     </div>
   </nav>
+  <select class="select-language" #myLanguage (change)="selectLanguage(myLanguage.value)">
+    <option class="option"
+            *ngFor='let language of languageArr'
+            [value]="language">{{language}}</option>
+  </select>
 </header>
