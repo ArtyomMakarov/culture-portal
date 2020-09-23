@@ -1,6 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { Subscription } from 'rxjs';
+import { Router } from '@angular/router';
 
 import { IAuthor } from '../core/models/authors-model';
 import { langs } from '../core/models/langs.model';
@@ -19,9 +20,14 @@ export class PoetsListComponent implements OnInit, OnDestroy{
   public authorsList: IAuthor[];
   public keyWord: string;
   public titleImgAuthor: string = './assets/img/poets-img/img2_orig.jpg';
+  public nameRoutePath: string;
   private subscription: Subscription;
 
-  constructor (private authors: AuthorsService, public translate: TranslateService) {
+  constructor (
+    private authors: AuthorsService,
+    public translate: TranslateService,
+    public router: Router
+  ) {
     this.authorsList = this.authors.getAllPoetsByLang(langs.en);
   }
 
@@ -44,8 +50,13 @@ export class PoetsListComponent implements OnInit, OnDestroy{
     }
   }
 
-  public selectAuthor(id: Iphoto): void {
-    this.titleImgAuthor = id.photo;
+  public selectAuthor(item: Iphoto): void {
+    this.titleImgAuthor = item.photo;
   }
 
+  public goToDetailedPage(id: number): void {
+    const name: string = this.authors.getAllPoetsByLang(langs.en)[id].name;
+    this.nameRoutePath = name.slice(name.lastIndexOf(' '));
+    this.router.navigate(['poets', this.nameRoutePath]);
+  }
 }
