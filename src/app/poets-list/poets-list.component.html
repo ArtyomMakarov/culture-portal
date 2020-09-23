@@ -12,9 +12,10 @@
     <img [src]="titleImgAuthor" alt="" align="right">
     <ul>
       <li
-        *ngFor="let author of authorsList | searchAuthor: keyWord"
+        *ngFor="let author of authorsList | searchAuthor: keyWord; let index = index"
         class="list"
         (mouseenter)="selectAuthor(author.galery[0])"
+        (click)="goToDetailedPage(index)"
       ><span>{{ author.name }}</span>
       </li>
     </ul>
