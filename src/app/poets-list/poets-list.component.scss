@@ -1,4 +1,5 @@
 @import "../../theme/colors.scss";
+
 .poets-list {
   max-width: 1200px;
   &__search {
@@ -10,7 +11,7 @@
       width: 500px;
       margin-left: 150px;
     }
-    input [type=text] {
+    input [type="text"] {
       width: 90%;
       padding: 16px;
       font-size: 17px;
@@ -31,7 +32,7 @@
       left: 50px;
     }
     .list {
-      font-family: Oswald-Regular, 'sans-serif';
+      font-family: Oswald-Regular, "sans-serif";
       font-size: 48px;
       -webkit-text-stroke: 1px $primary-orange;
       -webkit-text-fill-color: transparent;

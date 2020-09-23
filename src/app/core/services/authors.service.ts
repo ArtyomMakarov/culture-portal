@@ -5,8 +5,6 @@ import ruPoets from '../../../poets-data/ru/index.ru';
 import byPoets from '../../../poets-data/by/index.by';
 import { langs } from '../models/langs.model';
 
-
-
 @Injectable({
   providedIn: 'root',
 })
@@ -17,10 +15,14 @@ export class AuthorsService {
 
   getAllPoetsByLang(lang: langs): IAuthor[] {
     switch (lang) {
-      case langs.by: return this.byPoets;
-      case langs.en: return this.enPoets;
-      case langs.ru: return this.ruPoets;
-      default: return this.enPoets;
+      case langs.by:
+        return this.byPoets;
+      case langs.en:
+        return this.enPoets;
+      case langs.ru:
+        return this.ruPoets;
+      default:
+        return this.enPoets;
     }
   }
 }

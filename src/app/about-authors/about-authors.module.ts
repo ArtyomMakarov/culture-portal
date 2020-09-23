@@ -1,3 +1,4 @@
+import { PoetsListModule } from './../poets-list/poets-list.module';
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { MatTableModule } from '@angular/material/table';
