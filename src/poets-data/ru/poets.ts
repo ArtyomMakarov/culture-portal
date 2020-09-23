@@ -1,4 +1,4 @@
-import { IAuthor } from '../app/core/models/authors-model';
+import { IAuthor } from '../../app/core/models/authors-model';
 
 export const poets: IAuthor[] = [
   {
@@ -109,6 +109,9 @@ export const poets: IAuthor[] = [
     ],
     galery: [
       {
+        photo: './assets/img/poets-img/img1_orig.jpg',
+      },
+      {
         photo: './assets/img/poets-img/vv.jpg',
       },
       {
@@ -197,6 +200,9 @@ export const poets: IAuthor[] = [
       },
     ],
     galery: [
+      {
+        photo: './assets/img/poets-img/img2_orig.jpg',
+      },
       {
         photo: './assets/img/poets-img/v.jpg',
       },

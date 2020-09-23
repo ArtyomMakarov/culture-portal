@@ -1,0 +1,48 @@
+@import "../../theme/colors.scss";
+.poets-list {
+  max-width: 1200px;
+  &__search {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .form-field {
+      width: 500px;
+      margin-left: 150px;
+    }
+    input [type=text] {
+      width: 90%;
+      padding: 16px;
+      font-size: 17px;
+    }
+  }
+  &__wrapper {
+    max-width: 1200px;
+    margin-top: 20px;
+    img {
+      position: relative;
+      left: 50px;
+      height: 100%;
+      opacity: 0.4;
+    }
+    ul {
+      position: absolute;
+      top: 70px;
+      left: 50px;
+    }
+    .list {
+      font-family: Oswald-Regular, 'sans-serif';
+      font-size: 48px;
+      -webkit-text-stroke: 1px $primary-orange;
+      -webkit-text-fill-color: transparent;
+      list-style-type: none;
+      cursor: pointer;
+      text-align: left;
+      margin: 0;
+    }
+    .list:hover {
+      -webkit-text-fill-color: $primary-orange;
+      -webkit-text-stroke: 1px $primary-white;
+    }
+  }
+}
