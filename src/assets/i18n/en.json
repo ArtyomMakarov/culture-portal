@@ -1,5 +1,18 @@
 {
-    "APP": {
-        "TITLE": "Hello angular team"
+  "HEADER": {
+    "NAV": {
+      "HOME": "home",
+      "POETS": "poets",
+      "ABOUT": "authors"
     }
+  },
+  "CULTURE_HOME": {
+    "GREETINGS": {
+      "H1": "Welcome to CULTURE PORTAL",
+      "P": "Culture Portal is a website about famous belorussian poets. Here you can find information about their biography."
+    },
+    "AUTHOR_OF_DAY": {
+      "span": "learn more"
+    }
+  }
 }

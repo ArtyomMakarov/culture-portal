@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+$culture-portal-primary: mat-palette($mat-grey, 900, 400, 300);
+$culture-portal-accent: mat-palette($mat-light-blue);
+
+$culture-portal-warn: mat-palette($mat-deep-orange, A200);
+
+$culture-portal-theme: mat-light-theme((
+  color: (
+    primary: $culture-portal-primary,
+    accent: $culture-portal-accent,
+    warn: $culture-portal-warn,
+  )
+));
+
+@include angular-material-theme($culture-portal-theme);
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; overflow-x: hidden; }

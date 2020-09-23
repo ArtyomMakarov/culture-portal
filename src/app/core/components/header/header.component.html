@@ -2,19 +2,22 @@
   <nav class="header-container">
     <img
       mat-card-image
-      src="../../assets/img/logo_poets7.png"
+      src="assets/img/logo_poets2.png"
       alt="logo poets"
     />
     <div class="header-nav">
-      <a routerLink="/home" class="nav">HOME</a
+      <a routerLink="/home" class="nav">{{ "HEADER.NAV.HOME" | translate }}</a
       ><span class="bull">&bull;</span>
-      <a routerLink="/poets" class="nav">POETS</a
+      <a routerLink="/poets" class="nav">{{ "HEADER.NAV.POETS" | translate }}</a
       ><span class="bull">&bull;</span>
-      <a routerLink="/work-log" class="nav">WORKLOG</a
-      ><span class="bull">&bull;</span>
-      <a routerLink="/about-team" class="nav">ABOUT TEAM</a
-      ><span class="bull">&bull;</span>
-      <a routerLink="/style-guide" class="nav">STYLEGUIDE</a>
+      <a routerLink="/about-team" class="nav">{{ "HEADER.NAV.ABOUT" | translate }}</a>
     </div>
+    <select class="select-language" #myLanguage (change)="selectLanguage(myLanguage.value)">
+      <option class="option"
+              *ngFor='let language of languageArr'
+              [value]="language">{{language}}</option>
+    </select>
   </nav>
+
+  <div class="blur-bck"></div>
 </header>
