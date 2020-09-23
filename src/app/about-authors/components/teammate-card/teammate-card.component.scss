@@ -1,3 +1,5 @@
+@import "../../../../theme/colors.scss";
+
 .card-container {
   display: flex;
   flex-direction: column;
@@ -24,4 +26,18 @@
 
 .name {
   margin: 10px 0 5px 0;
+}
+
+.github-logo {
+  width: 15px;
+  margin-right: 5px;
+}
+
+.link {
+  text-decoration: none;
+  color: $primary-grey;
+
+  &:hover {
+    color: $secondary-grey;
+  }
 }
