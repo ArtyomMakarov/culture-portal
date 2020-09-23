@@ -8,10 +8,12 @@ import { NgxMapboxGLModule } from 'ngx-mapbox-gl';
 import { SearchAuthorPipe } from './pipes/search-author.pipe';
 import { MatInputModule } from '@angular/material/input';
 import { AuthorDetailComponent } from './components/author-detail/author-detail.component';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [PoetsListComponent, MapComponent, SearchAuthorPipe, AuthorDetailComponent],
   imports: [
+    SharedModule,
     CommonModule,
     PoetsListRoutingModule,
     MatInputModule,
