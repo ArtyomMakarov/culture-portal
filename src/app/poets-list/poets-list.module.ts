@@ -7,9 +7,10 @@ import { MapComponent } from './components/map/map.component';
 import { NgxMapboxGLModule } from 'ngx-mapbox-gl';
 import { SearchAuthorPipe } from './pipes/search-author.pipe';
 import { MatInputModule } from '@angular/material/input';
+import { AuthorDetailComponent } from './components/author-detail/author-detail.component';
 
 @NgModule({
-  declarations: [PoetsListComponent, MapComponent, SearchAuthorPipe],
+  declarations: [PoetsListComponent, MapComponent, SearchAuthorPipe, AuthorDetailComponent],
   imports: [
     CommonModule,
     PoetsListRoutingModule,
