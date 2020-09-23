@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { poets } from '../../../../poets-data/poets';
+import { poets } from '../../../../poets-data/ru/poets';
 
 @Component({
   selector: 'app-author-of-day',
