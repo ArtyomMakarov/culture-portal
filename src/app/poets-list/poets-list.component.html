@@ -1,20 +1,20 @@
 <div class="poets-list">
   <div class="poets-list__search">
-    <div><input
+    <mat-form-field class="form-field">
+    <input matInput
       #readWord
       (input)="inputWords(readWord.value)"
       type="text"
-      placeholder="Enter name poets"
-    ></div>
+      placeholder="Enter name poets..."
+    ></mat-form-field>
   </div>
   <div class="poets-list__wrapper">
-    <img [src]="titleImgAuthor" alt="">
+    <img [src]="titleImgAuthor" alt="" align="right">
     <ul>
       <li
-        *ngFor="let author of authorsList |
-        searchAuthor: keyWord"
+        *ngFor="let author of authorsList | searchAuthor: keyWord"
         class="list"
-        (mouseover)="selectAuthor($event)"
+        (mouseenter)="selectAuthor(author.galery[0])"
       ><span>{{ author.name }}</span>
       </li>
     </ul>

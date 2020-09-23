@@ -3,6 +3,10 @@ import { Component } from '@angular/core';
 import { IAuthor } from '../core/models/authors-model';
 import { AuthorsService } from '../core/services/authors.service';
 
+interface Iphoto {
+  photo: string;
+}
+
 @Component({
   selector: 'app-poets-list',
   templateUrl: './poets-list.component.html',
@@ -11,7 +15,7 @@ import { AuthorsService } from '../core/services/authors.service';
 export class PoetsListComponent {
   public authorsList: IAuthor[];
   public keyWord: string;
-  public titleImgAuthor: string = './assets/img/poets-img/img1_orig.jpg';
+  public titleImgAuthor: string = './assets/img/poets-img/img2_orig.jpg';
 
   constructor (private authors: AuthorsService) {
     this.authorsList = this.authors.getAllPoets();
@@ -23,8 +27,9 @@ export class PoetsListComponent {
       this.keyWord = query;
     }
   }
-  public selectAuthor(): void {
 
+  public selectAuthor(id: Iphoto): void {
+    this.titleImgAuthor = id.photo;
   }
 
 }
