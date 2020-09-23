@@ -27,9 +27,7 @@ export class PoetsListComponent implements OnInit, OnDestroy{
     private authors: AuthorsService,
     public translate: TranslateService,
     public router: Router
-  ) {
-    this.authorsList = this.authors.getAllPoetsByLang(langs.en);
-  }
+  ) { }
 
   ngOnInit(): void {
     this.subscription = this.translate.onLangChange.subscribe(
@@ -37,6 +35,8 @@ export class PoetsListComponent implements OnInit, OnDestroy{
         this.authorsList = this.authors.getAllPoetsByLang(val.lang);
       }
     )
+
+    this.authorsList = this.authors.getAllPoetsByLang(this.translate.currentLang as langs);
   }
 
   ngOnDestroy(): void {
