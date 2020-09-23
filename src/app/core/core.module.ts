@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
+import { SharedModule } from '../shared/shared.module';
 
 import { HeaderComponent } from './components/header/header.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
@@ -9,9 +10,9 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 @NgModule({
   declarations: [HeaderComponent, PageNotFoundComponent],
   imports: [
+    SharedModule,
     CommonModule,
     RouterModule,
-    TranslateModule
   ],
   exports: [HeaderComponent],
 })
