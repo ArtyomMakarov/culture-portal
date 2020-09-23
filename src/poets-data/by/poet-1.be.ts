@@ -10,7 +10,7 @@ export const poet: IAuthor = {
     {
       date: '16 мая 1911',
       description:
-        'Нарадзіўся ў вёсцы Еўлічы Слуцкага павета Менскай губерні ў сялянскай сям\'і.',
+        "Нарадзіўся ў вёсцы Еўлічы Слуцкага павета Менскай губерні ў сялянскай сям'і.",
     },
     {
       date: '1928',
@@ -108,13 +108,13 @@ export const poet: IAuthor = {
   ],
   galery: [
     {
-      photo: './assets/img/poets-img/vv.jpg',
+      photo: 'assets/img/poets-img/vv.jpg',
     },
     {
-      photo: './assets/img/poets-img/vasilv.jpg',
+      photo: 'assets/img/poets-img/vasilv.jpg',
     },
     {
-      photo: './assets/img/poets-img/vasilvitka.jpg',
+      photo: 'assets/img/poets-img/vasilvitka.jpg',
     },
   ],
   youtube: '',

@@ -25,6 +25,7 @@
     "@ngx-translate/http-loader": "^6.0.0",
     "angular-mgl-timeline": "^0.3.3",
     "mapbox-gl": "^1.12.0",
+    "ng-image-slider": "^2.6.4",
     "ngx-mapbox-gl": "^4.8.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",

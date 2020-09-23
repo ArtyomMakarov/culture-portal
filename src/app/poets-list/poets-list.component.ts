@@ -1,7 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { Subscription } from 'rxjs';
-import { Router } from '@angular/router';
 
 import { IAuthor } from '../core/models/authors-model';
 import { langs } from '../core/models/langs.model';
@@ -16,30 +16,30 @@ interface Iphoto {
   templateUrl: './poets-list.component.html',
   styleUrls: ['./poets-list.component.scss'],
 })
-export class PoetsListComponent implements OnInit, OnDestroy{
+export class PoetsListComponent implements OnInit, OnDestroy {
+  private subscription: Subscription;
   public authorsList: IAuthor[];
   public keyWord: string;
   public titleImgAuthor: string = './assets/img/poets-img/img2_orig.jpg';
   public nameRoutePath: string;
-  private subscription: Subscription;
 
-  constructor (
+  constructor(
     private authors: AuthorsService,
     public translate: TranslateService,
     public router: Router
-  ) { }
+  ) {}
 
   ngOnInit(): void {
-    this.subscription = this.translate.onLangChange.subscribe(
-      (val) => {
-        this.authorsList = this.authors.getAllPoetsByLang(val.lang);
-      }
-    )
+    this.subscription = this.translate.onLangChange.subscribe((val) => {
+      this.authorsList = this.authors.getAllPoetsByLang(val.lang);
+    });
 
-    this.authorsList = this.authors.getAllPoetsByLang(this.translate.currentLang as langs);
+    this.authorsList = this.authors.getAllPoetsByLang(
+      this.translate.currentLang as langs
+    );
   }
 
-  ngOnDestroy(): void {
+  public ngOnDestroy(): void {
     this.subscription.unsubscribe();
   }
 
