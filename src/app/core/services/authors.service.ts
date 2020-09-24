@@ -25,4 +25,17 @@ export class AuthorsService {
         return this.enPoets;
     }
   }
+
+  getPoetsByIdLang(id: number, lang: langs): IAuthor {
+    switch (lang) {
+      case langs.by:
+        return this.byPoets[id];
+      case langs.en:
+        return this.enPoets[id];
+      case langs.ru:
+        return this.ruPoets[id];
+      default:
+        return this.enPoets[id];
+    }
+  }
 }

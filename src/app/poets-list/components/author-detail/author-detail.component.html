@@ -1,6 +1,35 @@
 <div class="detail-container">
-  <img [src]="" alt="Pic">
-  <H2>Title</H2>
-  <mat-card-title>Description:</mat-card-title>
-  <mat-card-subtitle></mat-card-subtitle>
+  <figure class="">
+    <h1 class="text-center">
+      {{ author.name }}
+    </h1>
+    <img width="300"
+      alt="author.name"
+      [src]="author.photo"
+      class="">
+    <figcaption class="figure-caption">
+      <p>{{ author.liveTime }}</p>
+      <p>{{ author.biography }}</p>
+    </figcaption>
+  </figure>
+  <h2 class="authorDetail__sectionTitle">{{ "AUTHOR_DETAIL.H2.TIMELINE" | translate }}</h2>
+  <div class="timelineContainer">
+
+  </div>
+  <h2 class="authorDetail__sectionTitle">{{ "AUTHOR_DETAIL.H2.WORKS" | translate }}</h2>
+  <div class="timelineContainer">
+
+  </div>
+  <h2 class="authorDetail__sectionTitle">{{ "AUTHOR_DETAIL.H2.VIDEO" | translate }}</h2>
+  <div class="videoContainer">
+    <app-video [videoUrl]="'https://www.youtube.com/watch?v=hgVelC8z94s'"></app-video>
+  </div>
+  <h2 class="authorDetail__sectionTitle">{{ "AUTHOR_DETAIL.H2.ACTIVITY" | translate }}</h2>
+  <div class="mapContainer">
+    <app-map [lng]="author.activity[0].lon" [lat]="author.activity[0].lat"></app-map>
+  </div>
+  <h2 class="authorDetail__sectionTitle">{{ "AUTHOR_DETAIL.H2.GALERY" | translate }}</h2>
+  <div class="galleryContainer">
+    <app-gallery></app-gallery>
+  </div>
 </div>

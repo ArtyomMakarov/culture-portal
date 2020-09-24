@@ -1,5 +1,15 @@
 @import "../../../../theme/colors.scss";
 .detail-container {
   max-width: 1200px;
-  padding-top: 150px;
+  padding-top: 30px;
+
+  .authorDetail__sectionTitle {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 30px 0;
+    color: #fff;
+    background: linear-gradient(270deg,#fff,#fff 2%,  #f73310 33%, #f74e10 50%, #f73310 65%,#fff 99%,#fff);
+  }
+  
 }
