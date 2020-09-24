@@ -1,0 +1,48 @@
+:host {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.work {
+
+  &-list {
+    text-align: left;
+    list-style-type: none;
+  }
+
+  &-item {
+  padding-bottom: 5px;
+    
+    &:nth-child(even) .work-marker {
+      background: #e20001;
+    }
+  }
+
+  &-marker {
+    width: 1em;
+    height: 1em;
+    padding: .5em;
+    margin-right: 1em;
+    border-radius: 50%;
+    border: .25em solid #ccc;
+    background: #000;
+    color: #fff;
+    font-family: arial, serif;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+  }
+
+  &-name {
+    margin-right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+
+  &-date {
+    font-size: 26px;
+    color: #e20001;
+  }
+}

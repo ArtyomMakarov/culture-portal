@@ -9,9 +9,15 @@ import { SearchAuthorPipe } from './pipes/search-author.pipe';
 import { MatInputModule } from '@angular/material/input';
 import { AuthorDetailComponent } from './components/author-detail/author-detail.component';
 import { SharedModule } from '../shared/shared.module';
+import { WorkListComponent } from './components/work-list/work-list.component';
 
 @NgModule({
-  declarations: [PoetsListComponent, MapComponent, SearchAuthorPipe, AuthorDetailComponent],
+  declarations: [
+    PoetsListComponent,
+    MapComponent,
+    SearchAuthorPipe,
+    AuthorDetailComponent,
+    WorkListComponent],
   imports: [
     SharedModule,
     CommonModule,
@@ -23,4 +29,5 @@ import { SharedModule } from '../shared/shared.module';
   ],
   exports: [PoetsListComponent],
 })
-export class PoetsListModule {}
+export class PoetsListModule {
+}
