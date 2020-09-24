@@ -1,34 +1,67 @@
 @import "../../theme/colors.scss";
 .poets-list {
   max-width: 1200px;
+  padding-top: 150px;
   &__search {
     overflow: hidden;
     width: 100%;
     display: flex;
     justify-content: center;
     .form-field {
-      width: 500px;
-      margin-left: 150px;
+     min-width: calc(100vh - 300px);
+    }
+    @media screen and (max-width: 690px) {
+      width: 85%;
+      margin-left: 30px;
+      margin-top: 50px;
     }
     input [type=text] {
-      width: 90%;
+      width: 100%;
       padding: 16px;
       font-size: 17px;
     }
   }
   &__wrapper {
     max-width: 1200px;
+    margin: 0 auto;
     margin-top: 20px;
+    figure {
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+      margin: 0;
+    }
+    @media screen and (max-width: 690px) {
+      width: 100vh;
+      align-items: center;
+      overflow: hidden;
+      margin-top: 30px;
+    }
     img {
       position: relative;
-      left: 50px;
-      height: 100%;
+      height: auto;
       opacity: 0.4;
     }
     ul {
       position: absolute;
-      top: 70px;
-      left: 50px;
+      top: 230px;
+      right: 250px;
+      @media screen and (max-width: 1500px) {
+        top: 250px;
+        right: 180px;
+      }
+      @media screen and (max-width: 1200px) {
+        top: 250px;
+        right: 125px;
+      }
+      @media screen and (max-width: 900px) {
+        top: 270px;
+        right: 80px;
+      }
+      @media screen and (max-width: 690px) {
+        top: 300px;
+        right: 20px;
+      }
     }
     .list {
       font-family: Oswald-Regular, 'sans-serif';
@@ -37,8 +70,15 @@
       -webkit-text-fill-color: transparent;
       list-style-type: none;
       cursor: pointer;
-      text-align: left;
-      margin: 0;
+      text-align: right;
+      @media screen and (max-width: 690px) {
+        font-size: 32px;
+        margin: 0;
+      }
+      @media screen and (max-width: 450px) {
+        font-size: 20px;
+        margin: 0;
+      }
     }
     .list:hover {
       -webkit-text-fill-color: $primary-orange;

@@ -50,6 +50,9 @@ export const poet: IAuthor = {
   ],
   galery: [
     {
+      photo: './assets/img/poets-img/img6_orig.jpg',
+    },
+    {
       photo: './assets/img/poets-img/Poskrebyshev_A_S.jpg',
     },
     {

@@ -23,6 +23,7 @@
     "@angular/router": "~10.1.2",
     "@ngx-translate/core": "^13.0.0",
     "@ngx-translate/http-loader": "^6.0.0",
+    "angular-mgl-timeline": "^0.3.3",
     "mapbox-gl": "^1.12.0",
     "ngx-mapbox-gl": "^4.8.1",
     "rxjs": "~6.6.0",
