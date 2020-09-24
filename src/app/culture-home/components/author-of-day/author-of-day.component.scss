@@ -4,8 +4,12 @@
   height: 100%;
   display: flex;
   justify-content: center;
-  @media screen and (max-width: 350px) {
+  @media screen and (max-width: 1000px) {
     width: 100%;
+  }
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    align-items: center;
   }
   &__content {
     background-color: #f4f4f4;
@@ -15,6 +19,13 @@
     flex-direction: column;
     align-items: center;
     @media screen and (max-width: 1300px) {
+      width: 60%;
+    }
+    @media screen and (max-width: 1000px) {
+      width: 50%;
+    }
+    @media screen and (max-width: 500px) {
+      height: 50%;
       width: 100%;
     }
   }
@@ -22,7 +33,14 @@
     width: 25%;
     height: 100%;
     @media screen and (max-width: 1300px) {
-      display: none;
+      width: 40%;
+    }
+    @media screen and (max-width: 1000px) {
+      width: 50%;
+    }
+    @media screen and (max-width: 500px) {
+      height: 50%;
+      width: 100%;
     }
   }
   &__partition {
@@ -35,6 +53,12 @@
     margin: 20px;
     text-align: center;
     font-size: 40px;
+    @media screen and (max-width: 500px) {
+      font-size: 20px;
+    }
+    @media screen and (max-width: 900px) {
+      font-size: 30px;
+    }
   }
   &__live-time {
     text-align: center;
@@ -60,9 +84,6 @@
   }
   &__biography {
     color: $secondary-black;
-    @media screen and (max-width: 500px) {
-      display: none;
-    }
   }
 }
 
@@ -73,4 +94,7 @@
   height: 400px;
   display: flex;
   justify-content: center;
+  @media screen and (max-width: 600px) {
+    height: 800px;
+  }
 }

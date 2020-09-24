@@ -1,7 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { Subscription } from 'rxjs';
-import { Router } from '@angular/router';
 
 import { IAuthor } from '../core/models/authors-model';
 import { langs } from '../core/models/langs.model';
@@ -16,32 +16,18 @@ interface Iphoto {
   templateUrl: './poets-list.component.html',
   styleUrls: ['./poets-list.component.scss'],
 })
-export class PoetsListComponent implements OnInit, OnDestroy{
+export class PoetsListComponent implements OnInit, OnDestroy {
+  private subscription: Subscription;
   public authorsList: IAuthor[];
   public keyWord: string;
   public titleImgAuthor: string = './assets/img/poets-img/img0_orig.jpg';
   public nameRoutePath: string;
-  private subscription: Subscription;
 
-  constructor (
+  constructor(
     private authors: AuthorsService,
     public translate: TranslateService,
     public router: Router
-  ) {
-    this.authorsList = this.authors.getAllPoetsByLang(langs.en);
-  }
-
-  ngOnInit(): void {
-    this.subscription = this.translate.onLangChange.subscribe(
-      (val) => {
-        this.authorsList = this.authors.getAllPoetsByLang(val.lang);
-      }
-    )
-  }
-
-  ngOnDestroy(): void {
-    this.subscription.unsubscribe();
-  }
+  ) {}
 
   public inputWords(query: string): void {
     query = query.trim();
@@ -58,5 +44,19 @@ export class PoetsListComponent implements OnInit, OnDestroy{
     const name: string = this.authors.getAllPoetsByLang(langs.en)[id].name;
     this.nameRoutePath = name.slice(name.lastIndexOf(' '));
     this.router.navigate(['poets', this.nameRoutePath]);
+  }
+
+  public ngOnInit(): void {
+    this.subscription = this.translate.onLangChange.subscribe((val) => {
+      this.authorsList = this.authors.getAllPoetsByLang(val.lang);
+    });
+
+    this.authorsList = this.authors.getAllPoetsByLang(
+      this.translate.currentLang as langs
+    );
+  }
+
+  public ngOnDestroy(): void {
+    this.subscription.unsubscribe();
   }
 }

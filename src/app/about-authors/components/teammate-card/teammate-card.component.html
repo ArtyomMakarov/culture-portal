@@ -1,6 +1,6 @@
 <div class="card-container">
   <div>
-    <img class="image" [src]="'/assets/img/' + teammate.photoName + '.jpg'" />
+    <img class="image" [src]="'/assets/img/' + teammate.photoName" />
   </div>
   <div>
     <div class="text-container">
@@ -9,8 +9,11 @@
     <div class="text-container">
       <p class="text">{{ teammate.city + ", " + teammate.country }}</p>
     </div>
-    <div class="text-container">
-      <p class="text">{{ teammate.age + " years" }}</p>
+    <div>
+      <a class="link" [href]="'https://github.com/' + teammate.github"
+        ><img class="github-logo" src="/assets/img/github-logo.svg" />
+        Github
+      </a>
     </div>
   </div>
 </div>
