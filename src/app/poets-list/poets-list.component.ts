@@ -20,7 +20,7 @@ export class PoetsListComponent implements OnInit, OnDestroy {
   private subscription: Subscription;
   public authorsList: IAuthor[];
   public keyWord: string;
-  public titleImgAuthor: string = './assets/img/poets-img/img2_orig.jpg';
+  public titleImgAuthor: string = './assets/img/poets-img/img0_orig.jpg';
   public nameRoutePath: string;
 
   constructor(

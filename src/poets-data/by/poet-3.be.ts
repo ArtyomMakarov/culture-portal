@@ -46,6 +46,9 @@ export const poet: IAuthor = {
   ],
   galery: [
     {
+      photo: './assets/img/poets-img/img2_orig.jpg',
+    },
+    {
       photo: './assets/img/poets-img/VesjaluchaMaryna.jpg',
     },
     {
