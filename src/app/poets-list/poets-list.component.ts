@@ -29,20 +29,6 @@ export class PoetsListComponent implements OnInit, OnDestroy {
     public router: Router
   ) {}
 
-  ngOnInit(): void {
-    this.subscription = this.translate.onLangChange.subscribe((val) => {
-      this.authorsList = this.authors.getAllPoetsByLang(val.lang);
-    });
-
-    this.authorsList = this.authors.getAllPoetsByLang(
-      this.translate.currentLang as langs
-    );
-  }
-
-  public ngOnDestroy(): void {
-    this.subscription.unsubscribe();
-  }
-
   public inputWords(query: string): void {
     query = query.trim();
     if (query) {
@@ -58,5 +44,19 @@ export class PoetsListComponent implements OnInit, OnDestroy {
     const name: string = this.authors.getAllPoetsByLang(langs.en)[id].name;
     this.nameRoutePath = name.slice(name.lastIndexOf(' '));
     this.router.navigate(['poets', this.nameRoutePath]);
+  }
+
+  public ngOnInit(): void {
+    this.subscription = this.translate.onLangChange.subscribe((val) => {
+      this.authorsList = this.authors.getAllPoetsByLang(val.lang);
+    });
+
+    this.authorsList = this.authors.getAllPoetsByLang(
+      this.translate.currentLang as langs
+    );
+  }
+
+  public ngOnDestroy(): void {
+    this.subscription.unsubscribe();
   }
 }
