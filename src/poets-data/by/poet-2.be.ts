@@ -72,6 +72,9 @@ export const poet: IAuthor = {
   ],
   galery: [
     {
+      photo: './assets/img/poets-img/img1_orig.jpg',
+    },
+    {
       photo: './assets/img/poets-img/v.jpg',
     },
     {

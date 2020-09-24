@@ -4,7 +4,7 @@ export interface ITeammate {
   city: string;
   country: string;
   photoName: string;
-  age: number;
+  github: string;
 }
 
 export const TEAMMATES: ITeammate[] = [
@@ -13,48 +13,48 @@ export const TEAMMATES: ITeammate[] = [
     surname: 'Saikov',
     city: 'Minsk',
     country: 'Belarus',
-    age: 20,
-    photoName: 'pavel-saikov',
+    photoName: 'pavel-saikov.jpg',
+    github: 'pavelSaikov',
   },
   {
     name: 'Nikita',
     surname: 'Belykov',
     city: 'Moscow',
     country: 'Russia',
-    age: 20,
-    photoName: 'nikita-belykov',
+    photoName: 'nikita-belykov.jpg',
+    github: 'NikBel77',
   },
   {
-    name: 'Pavel',
-    surname: 'Saikov',
+    name: 'Tatiana',
+    surname: 'Kastrubai',
     city: 'Minsk',
     country: 'Belarus',
-    age: 20,
-    photoName: 'pavel-saikov',
+    photoName: 'tatiana-kastrubai.jpg',
+    github: 'kastrubait',
   },
   {
-    name: 'Nikita',
-    surname: 'Belykov',
-    city: 'Moscow',
-    country: 'Russia',
-    age: 20,
-    photoName: 'nikita-belykov',
-  },
-  {
-    name: 'Pavel',
-    surname: 'Saikov',
+    name: 'Artsem',
+    surname: 'Makarov',
     city: 'Minsk',
     country: 'Belarus',
-    age: 20,
-    photoName: 'pavel-saikov',
+    photoName: 'artem-makarov.jpg',
+    github: 'ArtyomMakarov',
   },
   {
-    name: 'Nikita',
-    surname: 'Belykov',
-    city: 'Moscow',
-    country: 'Russia',
-    age: 20,
-    photoName: 'nikita-belykov',
+    name: 'Konstantin',
+    surname: 'Kravtsov',
+    city: 'Minsk',
+    country: 'Belarus',
+    photoName: 'konstantin-kravtsov.png',
+    github: 'Yeeeeee1',
+  },
+  {
+    name: 'Gleb',
+    surname: 'Zhidovich',
+    city: 'Minsk',
+    country: 'Belarus',
+    photoName: 'gleb-zhidovich.jpg',
+    github: 'GlebZhidovich',
   },
 ];
 
@@ -77,7 +77,7 @@ export const TEAMMATES_WORKLOGS: ITeammateWorkLog[] = [
     ],
   },
   {
-    teammateName: 'Tanya',
+    teammateName: 'Tatiana Kastrubai',
     worklogItems: [
       { hours: 2, description: 'app design' },
       { hours: 4, description: 'app logo and header' },
@@ -86,11 +86,15 @@ export const TEAMMATES_WORKLOGS: ITeammateWorkLog[] = [
     ],
   },
   {
-    teammateName: 'Artsem',
+    teammateName: 'Artsem Makarov',
     worklogItems: [
       { hours: 0.5, description: 'initialize project repository' },
       { hours: 3, description: 'add material theme, colors and fonts' },
       { hours: 1.5, description: 'greetings component' },
+      {
+        hours: 1.5,
+        description: 'adaptive design for greetings component, header styles',
+      },
     ],
   },
   {
@@ -98,6 +102,22 @@ export const TEAMMATES_WORKLOGS: ITeammateWorkLog[] = [
     worklogItems: [
       { hours: 3, description: 'base app interfaces and info about poets' },
       { hours: 4, description: 'widget with random author' },
+      {
+        hours: 2,
+        description: 'adaptive design for widget with random author',
+      },
+    ],
+  },
+  {
+    teammateName: 'Nikita Belykov',
+    worklogItems: [
+      { hours: 3, description: 'project structure' },
+      { hours: 2, description: 'translation library' },
+      {
+        hours: 4,
+        description: 'implement modules for map, home page and translator',
+      },
+      { hours: 1, description: 'animated routing' },
     ],
   },
 ];

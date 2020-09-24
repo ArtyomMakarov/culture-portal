@@ -1,4 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { Subscription } from 'rxjs';
 
@@ -15,27 +16,18 @@ interface Iphoto {
   templateUrl: './poets-list.component.html',
   styleUrls: ['./poets-list.component.scss'],
 })
-export class PoetsListComponent implements OnInit, OnDestroy{
+export class PoetsListComponent implements OnInit, OnDestroy {
+  private subscription: Subscription;
   public authorsList: IAuthor[];
   public keyWord: string;
-  public titleImgAuthor: string = './assets/img/poets-img/img2_orig.jpg';
-  private subscription: Subscription;
+  public titleImgAuthor: string = './assets/img/poets-img/img0_orig.jpg';
+  public nameRoutePath: string;
 
-  constructor (private authors: AuthorsService, public translate: TranslateService) {
-    this.authorsList = this.authors.getAllPoetsByLang(langs.en);
-  }
-
-  ngOnInit(): void {
-    this.subscription = this.translate.onLangChange.subscribe(
-      (val) => {
-        this.authorsList = this.authors.getAllPoetsByLang(val.lang);
-      }
-    )
-  }
-
-  ngOnDestroy(): void {
-    this.subscription.unsubscribe();
-  }
+  constructor(
+    private authors: AuthorsService,
+    public translate: TranslateService,
+    public router: Router
+  ) {}
 
   public inputWords(query: string): void {
     query = query.trim();
@@ -44,8 +36,27 @@ export class PoetsListComponent implements OnInit, OnDestroy{
     }
   }
 
-  public selectAuthor(id: Iphoto): void {
-    this.titleImgAuthor = id.photo;
+  public selectAuthor(item: Iphoto): void {
+    this.titleImgAuthor = item.photo;
   }
 
+  public goToDetailedPage(id: number): void {
+    const name: string = this.authors.getAllPoetsByLang(langs.en)[id].name;
+    this.nameRoutePath = name.slice(name.lastIndexOf(' '));
+    this.router.navigate(['poets', this.nameRoutePath]);
+  }
+
+  public ngOnInit(): void {
+    this.subscription = this.translate.onLangChange.subscribe((val) => {
+      this.authorsList = this.authors.getAllPoetsByLang(val.lang);
+    });
+
+    this.authorsList = this.authors.getAllPoetsByLang(
+      this.translate.currentLang as langs
+    );
+  }
+
+  public ngOnDestroy(): void {
+    this.subscription.unsubscribe();
+  }
 }

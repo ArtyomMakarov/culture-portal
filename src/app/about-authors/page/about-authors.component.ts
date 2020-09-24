@@ -5,7 +5,7 @@ import {
   ITeammateWorkLog,
   TEAMMATES,
   TEAMMATES_WORKLOGS,
-} from './about-authors.models';
+} from '../about-authors.models';
 
 @Component({
   selector: 'app-about-authors',

@@ -1,7 +1,7 @@
 import { IAuthor } from '../../app/core/models/authors-model';
 
 export const poet: IAuthor = {
-  name: 'Marina Mikhailovna veselukha',
+  name: 'Marina Mikhailovna Veselukha',
   liveTime: 'July 15, 1987, Miory, Vitebsk region - xxxx',
   photo: './assets/img/poets-img/VesjaluchaMaryna.jpg',
   biography:
@@ -45,6 +45,9 @@ export const poet: IAuthor = {
     },
   ],
   galery: [
+    {
+      photo: './assets/img/poets-img/img2_orig.jpg',
+    },
     {
       photo: './assets/img/poets-img/VesjaluchaMaryna.jpg',
     },
