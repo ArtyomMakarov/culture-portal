@@ -12,6 +12,7 @@ import { CoreModule } from './core/core.module';
 import { CultureHomeModule } from './culture-home/culture-home.module';
 import { PoetsListModule } from './poets-list/poets-list.module';
 import { SharedModule } from './shared/shared.module';
+import { ScullyLibModule } from '@scullyio/ng-lib';
 
 // this function for load any static json file from ./assets/i18n
 export function HttpLoaderFactory(http: HttpClient) {
@@ -39,6 +40,7 @@ export function HttpLoaderFactory(http: HttpClient) {
 
       defaultLanguage: 'en',
     }),
+    ScullyLibModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
