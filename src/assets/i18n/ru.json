@@ -13,9 +13,20 @@
     },
     "AUTHOR_OF_DAY": {
       "span": "узнать больше"
-    },
-    "POETS_LIST": {
-      "input": "Введите имя или место"
+    }
+  },
+  "POETS_LIST": {
+    "INPUT": {
+      "placeholder": "Введите имя или место"
+    }
+  },
+ "AUTHOR_DETAIL": {
+    "H2": {
+      "TIMELINE": "Биография",
+      "WORKS": "Творчество",
+      "VIDEO": "Видео",
+      "ACTIVITY": "Основные места деятельности",
+      "GALERY": "Галерея"
     }
   }
 }
