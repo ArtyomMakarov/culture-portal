@@ -55,7 +55,7 @@ export const poet: IAuthor = {
     },
     {
       date: '1958',
-      work : 'На зоры займае',
+      work: 'На зоры займае',
     },
     {
       date: '1960',
