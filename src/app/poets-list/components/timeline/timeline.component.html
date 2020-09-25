@@ -1,0 +1,9 @@
+<div class="timeline-wrapper">
+  <mgl-timeline [alternate]="false" class="timeline" [side]="side">
+    <mgl-timeline-entry *ngFor="let entry of author.timeline">
+      <mgl-timeline-entry-header class="timeline__header">{{entry.date}}</mgl-timeline-entry-header>
+      <mgl-timeline-entry-content >{{entry.description}}</mgl-timeline-entry-content>
+      <mgl-timeline-entry-dot [size]="40" class="timeline__dot"></mgl-timeline-entry-dot>
+    </mgl-timeline-entry>
+  </mgl-timeline>
+</div>
