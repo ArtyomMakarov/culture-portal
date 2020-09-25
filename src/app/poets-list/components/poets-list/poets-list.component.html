@@ -1,5 +1,5 @@
 <div class="poets-list">
-  <div class="poets-list__search">
+  <!-- <div class="poets-list__search">
     <mat-form-field class="form-field">
       <input
         matInput
@@ -8,20 +8,25 @@
         type="text"
         placeholder="Enter name poets..."
     /></mat-form-field>
-  </div>
+  </div> -->
   <div class="poets-list__wrapper">
-    <img [src]="titleImgAuthor" alt="" align="center">
     <ul>
       <li
-        *ngFor="
-          let author of authorsList | searchAuthor: keyWord;
-        "
-        class="list"
-        (mouseenter)="selectAuthor(author.galery[0])"
-        (click)="goToDetailedPage(author.name)"
-      >
-        <span>{{ author.name }}</span>
+        *ngFor="let author of authorsList | searchAuthor: keyWord;"
+        class="list">
+
+        <span
+          (mouseenter)="selectAuthor(author.id)"
+          (click)="goToDetailedPage(author.name)">
+            {{ author.name }}
+        </span>
+
+        <div class="photo" *ngIf="selected === author.id">
+          <img @show [src]="author.photo" alt="author">
+        </div>
       </li>
     </ul>
+
+    <div class="skewed"></div>
   </div>
 </div>
