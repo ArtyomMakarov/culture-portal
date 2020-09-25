@@ -13,10 +13,11 @@ import { AuthorsService } from '../../../core/services/authors.service';
   styleUrls: ['./author-detail.component.scss']
 })
 export class AuthorDetailComponent implements OnInit {
-  public id: number = 2;
+  public id: string;
   public author: IAuthor;
-  public idSubscription: Subscription;
-  public langSubscription: Subscription;
+  private subscriptions: Subscription[] = [];
+
+  set subscription(sb: Subscription) { this.subscriptions.push(sb) };
 
   constructor(
     private authors: AuthorsService,
@@ -25,22 +26,24 @@ export class AuthorDetailComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    // this.idSubscription = this.route.params.subscribe( params => {
-    //   this.id = params.id;
-    // });
-    this.id = this.id;
-    console.log(this.id);
-    this.langSubscription = this.translate.onLangChange.subscribe((value) => {
-      this.author = this.authors.getPoetsByIdLang(this.id, value.lang);
+    this.subscription = this.route.params.subscribe( params => {
+      this.id = params.id;
     });
-    this.author = this.authors.getPoetsByIdLang(this.id,
-      this.translate.currentLang as langs
-    );
+
+
+    // default language is english until id is added || then you can change for this (poets.id === id)
+    this.subscription = this.translate.onLangChange.subscribe((value) => {      
+      this.author = this.authors.getAllPoetsByLang('en' as langs).find((poet) => poet.name.includes(this.id));
+    });
+
+    // same as above (poets.id === id)
+    this.author = this.authors.getAllPoetsByLang(
+      'en' as langs
+    ).find((poet) => poet.name.includes(this.id));;
   }
 
   public ngOnDestroy(): void {
-    this.idSubscription.unsubscribe();
-    this.langSubscription.unsubscribe();
+    this.subscriptions.forEach(sb => sb.unsubscribe())
   }
 
 }

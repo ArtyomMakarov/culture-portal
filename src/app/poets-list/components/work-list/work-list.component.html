@@ -1,0 +1,7 @@
+<ul class="work-list">
+  <li *ngFor="let work of workList; index as i" class="work-item">
+    <span class="work-marker">{{i + 1}}</span>
+    <span class="work-name">«{{work.work}}»</span>
+    <span class="work-date">{{work.date}}</span>
+  </li>
+</ul>

@@ -4,7 +4,7 @@ import {
     style,
     query,
     group,
-    // animateChild,
+    animateChild,
     animate,
 } from '@angular/animations';
 
@@ -34,12 +34,12 @@ function fade() {
         ], optional),
 
         query(':enter', [
-            animate('0.5s ease', style({ opacity: 1, transform: 'scale(1) translateY(0)' })),
+            animate('0.4s ease-out', style({ opacity: 1, transform: 'scale(1) translateY(0)' })),
         ], optional),
 
         // if we gonna use children in routes we need this
-        // query(':leave', animateChild()),
-        // query(':enter', animateChild())
+        query(':leave', animateChild(), optional),
+        query(':enter', animateChild(), optional)
     ]
 }
 
@@ -60,15 +60,15 @@ function slideTo(direction) {
 
         group([
             query(':leave', [
-                animate('0.5s ease', style({ [direction]: '100%' }))
+                animate('0.4s ease-out', style({ [direction]: '100%' }))
             ], optional),
             query(':enter', [
-                animate('0.5s ease', style({ [direction]: '0%' }))
+                animate('0.4s ease-out', style({ [direction]: '0%' }))
             ])
         ]),
 
         // if we gonna use children in routes we need this
-        // query(':leave', animateChild()),
-        // query(':enter', animateChild()),
+        query(':leave', animateChild(), optional),
+        query(':enter', animateChild(), optional),
     ];
 }
