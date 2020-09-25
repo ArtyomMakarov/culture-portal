@@ -7,7 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
     `
       mgl-map {
         height: 400px;
-        width: 80vw;
+        width: 100%;
       }
     `,
   ],
@@ -16,7 +16,7 @@ export class MapComponent implements OnInit {
 
   @Input() lng: number;
   @Input() lat: number;
-  
+
   public coords: number[];
 
   ngOnInit() {
