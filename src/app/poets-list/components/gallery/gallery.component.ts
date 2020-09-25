@@ -6,5 +6,6 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./gallery.component.scss'],
 })
 export class GalleryComponent {
-  @Input() public photos: { image: string }[];
+  @Input('gallery') public gallery: Array<object>;
+
 }
