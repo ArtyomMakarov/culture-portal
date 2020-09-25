@@ -3,9 +3,9 @@ import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { Subscription } from 'rxjs';
 
-import { IAuthor } from '../core/models/authors-model';
-import { langs } from '../core/models/langs.model';
-import { AuthorsService } from '../core/services/authors.service';
+import { IAuthor } from '../../../core/models/authors-model';
+import { langs } from '../../../core/models/langs.model';
+import { AuthorsService } from '../../../core/services/authors.service';
 
 interface Iphoto {
   photo: string;
@@ -40,8 +40,7 @@ export class PoetsListComponent implements OnInit, OnDestroy {
     this.titleImgAuthor = item.photo;
   }
 
-  public goToDetailedPage(id: number): void {
-    const name: string = this.authors.getAllPoetsByLang(langs.en)[id].name;
+  public goToDetailedPage(name: string): void {
     this.nameRoutePath = name.slice(name.lastIndexOf(' '));
     this.router.navigate(['poets', this.nameRoutePath]);
   }

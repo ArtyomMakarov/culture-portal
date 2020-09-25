@@ -15,11 +15,10 @@
       <li
         *ngFor="
           let author of authorsList | searchAuthor: keyWord;
-          let index = index
         "
         class="list"
         (mouseenter)="selectAuthor(author.galery[0])"
-        (click)="goToDetailedPage(index)"
+        (click)="goToDetailedPage(author.name)"
       >
         <span>{{ author.name }}</span>
       </li>
