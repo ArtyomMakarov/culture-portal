@@ -1,6 +1,7 @@
 import { IAuthor } from '../../app/core/models/authors-model';
 
 export const poet: IAuthor = {
+  id: "Anatoly_Stepanovich",
   name: 'Анатоль Сцяпанавіч Велюгін',
   liveTime: '27 сьнежня 1923 - 24 кастрычніка 1994 г. (70 гадоў)',
   photo: './assets/img/poets-img/Vialugin.jpg',
@@ -55,7 +56,7 @@ export const poet: IAuthor = {
     },
     {
       date: '1958',
-      work : 'На зоры займае',
+      work: 'На зоры займае',
     },
     {
       date: '1960',

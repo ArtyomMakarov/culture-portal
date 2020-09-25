@@ -1,6 +1,7 @@
 import { IAuthor } from '../../app/core/models/authors-model';
 
 export const poet: IAuthor = {
+  id: "Girsh_Solomonovich",
   name: 'Girsh Solomonovich Relay s',
   liveTime: 'April 23, 1913 - September 18, 2004 (age 91)',
   photo: './assets/img/poets-img/Reles_G.jpg',

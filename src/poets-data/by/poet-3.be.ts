@@ -1,6 +1,7 @@
 import { IAuthor } from '../../app/core/models/authors-model';
 
 export const poet: IAuthor = {
+  id: "Marina_Mikhailovna",
   name: 'Марына Міхайлаўна Весялуха',
   liveTime: '15 ліпеня 1987, Мёры, Віцебская вобласць-xxxx',
   photo: './assets/img/poets-img/VesjaluchaMaryna.jpg',

@@ -1,6 +1,7 @@
 import { IAuthor } from '../../app/core/models/authors-model';
 
 export const poet: IAuthor = {
+  id: "Timothy_Vasilyevich",
   name: 'Timothy Vasilyevich Krys\'ko',
   liveTime: '	16 May 1911 - 5 July 1996 (85 лет)',
   photo: './assets/img/poets-img/Vitka_Vas.jpg',
