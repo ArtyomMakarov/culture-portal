@@ -2,6 +2,7 @@ import { IAuthor } from '../../app/core/models/authors-model';
 
 export const poets: IAuthor[] = [
   {
+    id: "Timothy_Vasilyevich",
     name: 'Василь Витка',
     liveTime: '	16 мая 1911 - 5 июля 1996 (85 лет)',
     photo: './assets/img/poets-img/Vitka_Vas.jpg',
@@ -130,6 +131,7 @@ export const poets: IAuthor[] = [
     ],
   },
   {
+    id: "Anatoly_Stepanovich",
     name: 'Анато́лий Степа́нович Велю́гин',
     liveTime: '27 декабря 1923 - 24 октября 1994 (70 лет)',
     photo: './assets/img/poets-img/Vialugin.jpg',
@@ -222,6 +224,7 @@ export const poets: IAuthor[] = [
     ],
   },
   {
+    id: "Marina_Mikhailovna",
     name: 'Мари́на Миха́йловна Веселу́ха',
     liveTime: '15 июля 1987, Миоры, Витебская область - xxxx',
     photo: './assets/img/poets-img/VesjaluchaMaryna.jpg',
@@ -285,6 +288,7 @@ export const poets: IAuthor[] = [
     ],
   },
   {
+    id: "Vladimir_Vyacheslavovich",
     name: 'Ада́м Гло́бус',
     liveTime: '29 сентября 1958 (61 год) - xxxx',
     photo: './assets/img/poets-img/Adam_Globus.jpg',
@@ -348,6 +352,7 @@ export const poets: IAuthor[] = [
     ],
   },
   {
+    id: "Yuri_Igorevich",
     name: 'Юрий Игоревич Гуменюк',
     liveTime: '24 сентября 1969 — 19 января 2013',
     photo: './assets/img/poets-img/Juryj_Humianiuk_w_Warszawie_4.jpg',
@@ -419,6 +424,7 @@ export const poets: IAuthor[] = [
     ],
   },
   {
+    id: "Girsh_Solomonovich",
     name: 'Гирш Соломо́нович (Григо́рий Льво́вич) Ре́лес',
     liveTime: '23 апреля 1913 - 18 сентября 2004 (91 год)',
     photo: './assets/img/poets-img/Reles_G.jpg',
@@ -498,6 +504,7 @@ export const poets: IAuthor[] = [
     ],
   },
   {
+    id: "Alexander_Stepanovich",
     name: 'Александр Степанович Поскрёбышев',
     liveTime: '13 апреля 1935 - 6 августа 2007 (72 года)',
     photo: './assets/img/poets-img/Poskrebyshev_A_S.jpg',

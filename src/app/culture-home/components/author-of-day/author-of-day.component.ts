@@ -7,10 +7,11 @@ import { poets } from '../../../../poets-data/ru/poets';
   styleUrls: ['./author-of-day.component.scss'],
 })
 export class AuthorOfDayComponent implements OnInit {
-  i = Math.round(Math.random() * 6);
+  date = new Date();
+  i = this.date.getDay();
   model = poets;
 
-  constructor() {}
+  constructor() { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 }
