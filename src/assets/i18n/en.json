@@ -13,9 +13,20 @@
     },
     "AUTHOR_OF_DAY": {
       "span": "learn more"
-    },
-    "POETS_LIST": {
-      "input": "Enter name or place"
+    }
+  },
+  "POETS_LIST": {
+    "INPUT": {
+      "placeholder": "Enter name or place"
+    }
+  },
+ "AUTHOR_DETAIL": {
+    "H2": {
+      "TIMELINE": "Biography",
+      "WORKS": "Works",
+      "VIDEO": "Video",
+      "ACTIVITY": "Major activity place",
+      "GALERY": "Callery"
     }
   }
 }

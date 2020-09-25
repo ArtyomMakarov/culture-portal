@@ -4,7 +4,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { AboutAuthorsComponent } from './about-authors/page/about-authors.component';
 import { PageNotFoundComponent } from './core/components/page-not-found/page-not-found.component';
 import { CulturePageComponent } from './culture-home/page/culture-page.component';
-import { PoetsListComponent } from './poets-list/poets-list.component';
+import { AuthorDetailComponent } from './poets-list/components/author-detail/author-detail.component';
+import { PoetsListComponent } from './poets-list/components/poets-list/poets-list.component';
+import { PoetsPageComponent } from './poets-list/page/poets-page.component';
 
 const routes: Routes = [
   {
@@ -14,8 +16,19 @@ const routes: Routes = [
   },
   {
     path: 'poets',
-    component: PoetsListComponent,
+    component: PoetsPageComponent,
     data: { animation: 'center' },
+    children: [
+      {
+        path: '',
+        component: PoetsListComponent,
+      },
+      {
+        path: ':id',
+        component: AuthorDetailComponent,
+        data: { animation: 'fade' },
+      }
+    ]
   },
   {
     path: 'about-team',

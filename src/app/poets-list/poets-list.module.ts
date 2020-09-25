@@ -14,11 +14,11 @@ import { GalleryComponent } from './components/gallery/gallery.component';
 import { MapComponent } from './components/map/map.component';
 import { VideoComponent } from './components/video/video.component';
 import { SearchAuthorPipe } from './pipes/search-author.pipe';
-
-import { PoetsListRoutingModule } from './poets-list-routing.module';
 import { WorkListComponent } from './components/work-list/work-list.component';
-import { PoetsListComponent } from './poets-list.component';
+import { PoetsListComponent } from './components/poets-list/poets-list.component';
 import { VideoIdPipe } from './pipes/id.pipe';
+import { PoetsPageComponent } from './page/poets-page.component';
+import { AppRoutingModule } from '../app-routing.module';
 
 @NgModule({
   declarations: [
@@ -30,11 +30,11 @@ import { VideoIdPipe } from './pipes/id.pipe';
     GalleryComponent,
     VideoComponent,
     VideoIdPipe,
+    PoetsPageComponent,
   ],
   imports: [
     SharedModule,
     CommonModule,
-    PoetsListRoutingModule,
     MatInputModule,
     BrowserAnimationsModule,
     MglTimelineModule,
@@ -45,6 +45,7 @@ import { VideoIdPipe } from './pipes/id.pipe';
     }),
     NgImageSliderModule,
     NgxYoutubePlayerModule,
+    AppRoutingModule
   ],
   exports: [PoetsListComponent],
 })
