@@ -19,6 +19,7 @@ import { PoetsListComponent } from './components/poets-list/poets-list.component
 import { VideoIdPipe } from './pipes/id.pipe';
 import { PoetsPageComponent } from './page/poets-page.component';
 import { AppRoutingModule } from '../app-routing.module';
+import { TimelineComponent } from "./components/timeline/timeline.component";
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { AppRoutingModule } from '../app-routing.module';
     VideoComponent,
     VideoIdPipe,
     PoetsPageComponent,
+    TimelineComponent
   ],
   imports: [
     SharedModule,

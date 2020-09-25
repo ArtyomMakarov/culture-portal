@@ -14,7 +14,7 @@
   </figure>
   <h2 class="authorDetail__sectionTitle">{{ "AUTHOR_DETAIL.H2.TIMELINE" | translate }}</h2>
   <div class="timelineContainer">
-
+    <app-timeline [author]="author"></app-timeline>
   </div>
   <h2 class="authorDetail__sectionTitle">{{ "AUTHOR_DETAIL.H2.WORKS" | translate }}</h2>
   <div class="timelineContainer">
@@ -31,6 +31,6 @@
   </div>
   <h2 class="authorDetail__sectionTitle">{{ "AUTHOR_DETAIL.H2.GALERY" | translate }}</h2>
   <div class="galleryContainer">
-    <app-gallery [photos]="author.galery"></app-gallery>
+    <app-gallery [gallery]="gallery"></app-gallery>
   </div>
 </div>

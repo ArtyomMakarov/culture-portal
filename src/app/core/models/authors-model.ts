@@ -10,7 +10,7 @@ export interface IAuthor {
   activity: Activity[];
 }
 
-interface Timeline {
+export interface Timeline {
   date: string;
   description: string;
 }
