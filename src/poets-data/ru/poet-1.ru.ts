@@ -1,6 +1,7 @@
 import { IAuthor } from '../../app/core/models/authors-model';
 
 export const poet: IAuthor = {
+  id: "Timothy_Vasilyevich",
   name: 'Тимофей Васильевич Крысько',
   liveTime: '	16 мая 1911 - 5 июля 1996 (85 лет)',
   photo: './assets/img/poets-img/Vitka_Vas.jpg',

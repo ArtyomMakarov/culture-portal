@@ -1,6 +1,7 @@
 import { IAuthor } from '../../app/core/models/authors-model';
 
 export const poet: IAuthor = {
+  id: "Alexander_Stepanovich",
   name: 'Alexander Stepanovich Poskrebyshev',
   liveTime: 'April 13, 1935 - August 6, 2007 (72 years old)',
   photo: './assets/img/poets-img/Poskrebyshev_A_S.jpg',

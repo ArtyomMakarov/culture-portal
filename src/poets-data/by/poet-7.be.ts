@@ -1,6 +1,7 @@
 import { IAuthor } from '../../app/core/models/authors-model';
 
 export const poet: IAuthor = {
+  id: "Alexander_Stepanovich",
   name: 'Александр Степанович Поскребышев',
   liveTime: '13 апреля 1935-6 августа 2007 (72 года)',
   photo: './assets/img/poets-img/Poskrebyshev_A_S.jpg',

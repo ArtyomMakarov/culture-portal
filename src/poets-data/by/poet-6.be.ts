@@ -1,6 +1,7 @@
 import { IAuthor } from '../../app/core/models/authors-model';
 
 export const poet: IAuthor = {
+  id: "Girsh_Solomonovich",
   name: 'Гірш Саламонавіч Рэлес',
   liveTime: '23 красавіка 1913 - 18 верасня 2004 (91 год)',
   photo: './assets/img/poets-img/Reles_G.jpg',

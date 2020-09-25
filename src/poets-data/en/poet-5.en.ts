@@ -1,6 +1,7 @@
 import { IAuthor } from '../../app/core/models/authors-model';
 
 export const poet: IAuthor = {
+  id: "Yuri_Igorevich",
   name: 'Yuri Igorevich Gumenyuk',
   liveTime: 'September 24, 1969 — January 19, 2013',
   photo: './assets/img/poets-img/Juryj_Humianiuk_w_Warszawie_4.jpg',
