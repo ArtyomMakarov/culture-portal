@@ -16,6 +16,7 @@ export class AuthorDetailComponent implements OnInit {
   public id: string;
   public author: IAuthor;
   private subscriptions: Subscription[] = [];
+  public gallery: Array<object> =[];
 
   set subscription(sb: Subscription) { this.subscriptions.push(sb) };
 
@@ -32,14 +33,24 @@ export class AuthorDetailComponent implements OnInit {
 
 
     // default language is english until id is added || then you can change for this (poets.id === id)
-    this.subscription = this.translate.onLangChange.subscribe((value) => {      
+    this.subscription = this.translate.onLangChange.subscribe((value) => {
       this.author = this.authors.getAllPoetsByLang('en' as langs).find((poet) => poet.name.includes(this.id));
     });
 
     // same as above (poets.id === id)
     this.author = this.authors.getAllPoetsByLang(
       'en' as langs
-    ).find((poet) => poet.name.includes(this.id));;
+    ).find((poet) => poet.name.includes(this.id));
+
+    this.author.galery.forEach( photo => {
+      let photoObg = {
+        image: photo.photo,
+        thumbImage: photo.photo,
+        alt: 'alt of img',
+        title: `${this.author.name}`
+      };
+      this.gallery.push(photoObg);
+    });
   }
 
   public ngOnDestroy(): void {
