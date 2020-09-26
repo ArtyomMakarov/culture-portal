@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { IWorklogItem } from '../../about-authors.models';
+import { IWorklogItem } from '../../models/about-authors.models';
 
 @Component({
   selector: 'app-teammate-worklog',
