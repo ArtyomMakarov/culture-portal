@@ -19,6 +19,7 @@
   </div>
   <div class="timelineContainer">
     <h2 class="authorDetail__sectionTitle">{{ "AUTHOR_DETAIL.H2.WORKS" | translate }}</h2>
+    <app-work-list [workList]="author.works"></app-work-list>
   </div>
   <div class="videoContainer" *ngIf="author.youtube">
     <h2 class="authorDetail__sectionTitle">{{ "AUTHOR_DETAIL.H2.VIDEO" | translate }}</h2>

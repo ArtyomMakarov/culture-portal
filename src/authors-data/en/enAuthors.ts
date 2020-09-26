@@ -11,7 +11,7 @@ export const TEAMMATES_EN: ITeammate[] = [
   },
   {
     name: 'Nikita',
-    surname: 'Belykov',
+    surname: 'Belyakov',
     city: 'Moscow',
     country: 'Russia',
     photoName: 'nikita-belykov.jpg',
