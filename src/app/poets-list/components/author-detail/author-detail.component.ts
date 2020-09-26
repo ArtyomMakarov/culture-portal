@@ -31,16 +31,13 @@ export class AuthorDetailComponent implements OnInit {
       this.id = params.id;
     });
 
-
-    // default language is english until id is added || then you can change for this (poets.id === id)
     this.subscription = this.translate.onLangChange.subscribe((value) => {
-      this.author = this.authors.getAllPoetsByLang('en' as langs).find((poet) => poet.name.includes(this.id));
+      this.author = this.authors.getAllPoetsByLang(value.lang as langs).find((poet) => poet.id === this.id);
     });
 
-    // same as above (poets.id === id)
     this.author = this.authors.getAllPoetsByLang(
-      'en' as langs
-    ).find((poet) => poet.name.includes(this.id));
+      this.translate.currentLang as langs
+    ).find((poet) => poet.id === this.id);
 
     this.author.galery.forEach( photo => {
       let photoObg = {
