@@ -1,6 +1,6 @@
 @import '../../../../theme/colors';
 .timeline-wrapper {
-  max-width: 30%;
+  max-width: 60%;
   margin: 0 auto;
   @media screen and (max-width: 1024px) {
     max-width: 60%;
@@ -15,9 +15,20 @@
     padding: 0;
     &__header {
       cursor: pointer;
+      color: $primary-white;
+      text-shadow: 1px 1px $secondary-black;
+      box-shadow: 0 4px 8px #00000033;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    &__description {
+      box-shadow: 0 4px 8px #00000033;
+      font-size: 18px;
+      letter-spacing: 1.7px;
     }
     &__dot {
-      background-color: $primary-blue;
+      background-color: $secondary-blue;
+      box-shadow: 0 4px 8px #00000033;
       cursor: pointer;
     }
   }
