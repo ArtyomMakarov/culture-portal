@@ -59,8 +59,8 @@ export class PoetsListComponent implements OnInit, OnDestroy {
   }
 
   public ngOnInit(): void {
-    this.subscription = this.translate.onLangChange.subscribe((val) => {
-      this.authorsList = this.authors.getAllPoetsByLang(val.lang);
+    this.subscription = this.translate.onLangChange.subscribe((value) => {
+      this.authorsList = this.authors.getAllPoetsByLang(value.lang);
     });
 
     this.authorsList = this.authors.getAllPoetsByLang(
