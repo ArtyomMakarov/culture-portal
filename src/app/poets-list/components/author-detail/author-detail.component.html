@@ -1,36 +1,37 @@
 <div class="detail-container">
-  <figure class="">
-    <h1 class="text-center">
+  <figure >
+    <h1 class="detail-title">
       {{ author.name }}
     </h1>
     <img width="300"
       alt="author.name"
       [src]="author.photo"
-      class="">
+      class="boxShadow"
+      align="center">
     <figcaption class="figure-caption">
-      <p>{{ author.liveTime }}</p>
+      <span><strong>{{ author.liveTime }}</strong></span>
       <p>{{ author.biography }}</p>
     </figcaption>
   </figure>
-  <h2 class="authorDetail__sectionTitle">{{ "AUTHOR_DETAIL.H2.TIMELINE" | translate }}</h2>
   <div class="timelineContainer">
+    <h2 class="authorDetail__sectionTitle">{{ "AUTHOR_DETAIL.H2.TIMELINE" | translate }}</h2>
     <app-timeline [author]="author"></app-timeline>
   </div>
-  <h2 class="authorDetail__sectionTitle">{{ "AUTHOR_DETAIL.H2.WORKS" | translate }}</h2>
   <div class="timelineContainer">
-
+    <h2 class="authorDetail__sectionTitle">{{ "AUTHOR_DETAIL.H2.WORKS" | translate }}</h2>
   </div>
-  <h2 class="authorDetail__sectionTitle">{{ "AUTHOR_DETAIL.H2.VIDEO" | translate }}</h2>
-  <div class="videoContainer">
-    <app-video [videoUrl]="'https://www.youtube.com/watch?v=hgVelC8z94s'"></app-video>
+  <div class="videoContainer" *ngIf="author.youtube">
+    <h2 class="authorDetail__sectionTitle">{{ "AUTHOR_DETAIL.H2.VIDEO" | translate }}</h2>
+    <app-video [videoUrl]="author.youtube" class="boxShadow"></app-video>
   </div>
-  <h2 class="authorDetail__sectionTitle">{{ "AUTHOR_DETAIL.H2.ACTIVITY" | translate }}</h2>
   <div class="mapContainer">
-    <app-map [lng]="author.activity[0].lon" [lat]="author.activity[0].lat">
-    </app-map>
+    <h2 class="authorDetail__sectionTitle">{{ "AUTHOR_DETAIL.H2.ACTIVITY" | translate }}</h2>
+    <div class="map">
+      <app-map [lng]="author.activity[0].lon" [lat]="author.activity[0].lat"></app-map>
+    </div>
   </div>
-  <h2 class="authorDetail__sectionTitle">{{ "AUTHOR_DETAIL.H2.GALERY" | translate }}</h2>
   <div class="galleryContainer">
+    <h2 class="authorDetail__sectionTitle">{{ "AUTHOR_DETAIL.H2.GALERY" | translate }}</h2>
     <app-gallery [gallery]="gallery"></app-gallery>
   </div>
 </div>

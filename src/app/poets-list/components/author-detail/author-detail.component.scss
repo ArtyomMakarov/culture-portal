@@ -3,14 +3,47 @@
   max-width: 1200px;
   padding-top: 30px;
   margin: 0 auto;
-  padding-top: 100px;
+  padding-top: 130px;
+  @media screen and (max-width: 605px) {
+    padding-top: 200px;
+  }
+  figure {
+    margin: 0 auto;
+  }
+  .detail-title {
+    font-size: 48px;
+    color: $secondary-black;
+    text-shadow: 1px 1px $bg-color;
+  }
   .authorDetail__sectionTitle {
     text-align: center;
-    text-transform: uppercase;
+    text-transform: lowercase;
     font-weight: 700;
+    letter-spacing: 1px;
     margin: 30px 0;
-    color: #fff;
-    background: linear-gradient(270deg,#fff,#fff 2%, #f73310 33%, #f74e10 50%, #f73310 65%,#fff 99%,#fff);
+    color: $primary-orange;
+    text-shadow: 1px 1px $bg-color;
+    background: linear-gradient(270deg,#fff,#fff 2%,#c5c5c5 33%, #9e9ea888 50%, #c5c5c5 65%,#fff 99%,#fff);
+  }
+  .boxShadow {
+    margin: 1em auto;
+    padding: 1em;
+    box-shadow: 0 4px 8px #00000033;
+  }
+  .figure-caption {
+    font-size: 18px;
+    span {
+      font-size: medium;
+    }
+  }
+  .mapContainer {
+    margin: 0 auto;
+    .map {
+      margin: 0 auto;
+      width: 80%;
+      border: 1px solod red;
+      box-shadow: 0 4px 8px #00000033;
+    }
   }
 
 }
