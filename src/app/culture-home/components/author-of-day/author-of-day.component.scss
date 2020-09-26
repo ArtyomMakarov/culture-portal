@@ -88,3 +88,21 @@
     height: 800px;
   }
 }
+
+.author-of-day-name {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 30px 0;
+  color: #fff;
+  background: linear-gradient(
+    270deg,
+    #fff,
+    #fff 2%,
+    #f73310 33%,
+    #f74e10 50%,
+    #f73310 65%,
+    #fff 99%,
+    #fff
+  );
+}

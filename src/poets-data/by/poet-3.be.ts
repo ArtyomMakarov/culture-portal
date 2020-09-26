@@ -1,7 +1,7 @@
 import { IAuthor } from '../../app/core/models/authors-model';
 
 export const poet: IAuthor = {
-  id: "Marina_Mikhailovna",
+  id: 'Marina_Veselukha',
   name: 'Марына Міхайлаўна Весялуха',
   liveTime: '15 ліпеня 1987, Мёры, Віцебская вобласць-xxxx',
   photo: './assets/img/poets-img/VesjaluchaMaryna.jpg',
@@ -36,8 +36,7 @@ export const poet: IAuthor = {
     },
     {
       date: '2013',
-      work:
-        'Адна з пераможцаў конкурсу маладых крытыкаў імя Адама Бабареко.',
+      work: 'Адна з пераможцаў конкурсу маладых крытыкаў імя Адама Бабареко.',
     },
     {
       date: '2015',

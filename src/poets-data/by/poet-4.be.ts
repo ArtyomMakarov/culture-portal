@@ -1,7 +1,7 @@
 import { IAuthor } from '../../app/core/models/authors-model';
 
 export const poet: IAuthor = {
-  id: "Vladimir_Vyacheslavovich",
+  id: 'Vladimir_Adamchik',
   name: 'Уладзімір Вячаслававіч Адамчык',
   liveTime: '29 верасня 1958 (61 год) - xxxx',
   photo: './assets/img/poets-img/Adam_Globus.jpg',
