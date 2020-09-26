@@ -121,7 +121,7 @@ export const poet: IAuthor = {
       photo: 'assets/img/poets-img/vasilvitka.jpg',
     },
   ],
-  youtube: '',
+  youtube: 'https://www.youtube.com/watch?v=1kpwDwhSTQk',
   activity: [
     {
       lat: '52.98',

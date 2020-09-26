@@ -1,7 +1,7 @@
 import { IAuthor } from '../../app/core/models/authors-model';
 
 export const poet: IAuthor = {
-  id: "Marina_Mikhailovna",
+  id: 'Marina_Mikhailovna',
   name: 'Marina Mikhailovna Veselukha',
   liveTime: 'July 15, 1987, Miory, Vitebsk region - xxxx',
   photo: './assets/img/poets-img/VesjaluchaMaryna.jpg',
@@ -59,7 +59,7 @@ export const poet: IAuthor = {
       photo: './assets/img/poets-img/VesjaluchaMaryna.jpg',
     },
   ],
-  youtube: 'https://www.youtube.com/watch?v=0pZZW0LocrA',
+  youtube: 'https://www.youtube.com/watch?v=hgVelC8z94s',
   activity: [
     {
       lat: '55.6222000',
