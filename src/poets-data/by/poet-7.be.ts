@@ -57,10 +57,10 @@ export const poet: IAuthor = {
       photo: './assets/img/poets-img/Poskrebyshev_A_S.jpg',
     },
     {
-      photo: './assets/img/poets-img/Poskrebyshev_A_S.jpg',
+      photo: './assets/img/poets-img/ap.jpg',
     },
     {
-      photo: './assets/img/poets-img/Poskrebyshev_A_S.jpg',
+      photo: './assets/img/poets-img/as.jpg',
     },
   ],
   youtube: '',
