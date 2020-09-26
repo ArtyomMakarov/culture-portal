@@ -10,4 +10,4 @@ import { poet as poet7 } from './poet-7.ru';
 
 const ruPoets: IAuthor[] = [poet1, poet2, poet3, poet4, poet5, poet6, poet7];
 
-export default byPoets;
+export default ruPoets;

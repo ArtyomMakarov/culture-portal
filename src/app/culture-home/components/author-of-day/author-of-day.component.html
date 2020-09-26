@@ -1,20 +1,21 @@
 <!-- widget that shows 1 selected author -->
-<h1 class="author-of-day-name">Автор дня</h1>
+<h2 class="author-of-day-name">
+  {{ "CULTURE_HOME.AUTHOR_OF_DAY.H2" | translate }}
+</h2>
 <div class="global-block">
   <div class="random-author-widjet">
-    <img
-      src="../../../.{{ model[i].photo }}"
-      class="random-author-widjet__poet-img"
-    />
+    <img src="{{ author.photo }}" class="random-author-widjet__poet-img" />
     <div class="random-author-widjet__content">
-      <h3 class="random-author-widjet__name">{{ model[i].name }}</h3>
-      <p class="random-author-widjet__live-time">{{ model[i].liveTime }}</p>
+      <h3 class="random-author-widjet__name">{{ author.name }}</h3>
+      <p class="random-author-widjet__live-time">{{ author.liveTime }}</p>
       <hr class="random-author-widjet__partition" />
-      <p class="random-author-widjet__biography">{{ model[i].biography }}</p>
-      <a href="/poets" class="random-author-widjet__learn-more"
-        ><span class="random-author-widjet__inner-link-span"
-          >Learn more</span
-        ></a
+      <p class="random-author-widjet__biography">{{ author.biography }}</p>
+      <a
+        (click)="goToAuthorPage(author.id)"
+        class="random-author-widjet__learn-more"
+        ><span class="random-author-widjet__inner-link-span">{{
+          "CULTURE_HOME.AUTHOR_OF_DAY.SPAN" | translate
+        }}</span></a
       >
     </div>
   </div>
