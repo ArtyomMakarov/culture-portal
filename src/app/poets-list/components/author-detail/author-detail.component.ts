@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
@@ -17,6 +17,7 @@ export class AuthorDetailComponent implements OnInit {
   public author: IAuthor;
   private subscriptions: Subscription[] = [];
   public gallery: Array<object> =[];
+  public isVisible: boolean = false;
 
   set subscription(sb: Subscription) { this.subscriptions.push(sb) };
 
@@ -26,7 +27,7 @@ export class AuthorDetailComponent implements OnInit {
     public translate: TranslateService
   ) { }
 
-  ngOnInit(): void {
+  public ngOnInit(): void {
     this.subscription = this.route.params.subscribe( params => {
       this.id = params.id;
     });
@@ -54,4 +55,11 @@ export class AuthorDetailComponent implements OnInit {
     this.subscriptions.forEach(sb => sb.unsubscribe())
   }
 
+  public showVideo(): void {
+    this.isVisible = true;
+  }
+
+  public overlayClicked() {
+    this.isVisible = false;
+  }
 }
