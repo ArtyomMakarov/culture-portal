@@ -59,7 +59,7 @@ export const poet: IAuthor = {
       photo: './assets/img/poets-img/VesjaluchaMaryna.jpg',
     },
   ],
-  youtube: 'https://www.youtube.com/watch?v=hgVelC8z94s',
+  youtube: 'https://www.youtube.com/watch?v=0pZZW0LocrA',
   activity: [
     {
       lat: '55.6222000',
