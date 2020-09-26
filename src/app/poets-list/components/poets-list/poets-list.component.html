@@ -1,14 +1,13 @@
 <div class="poets-list">
-  <!-- <div class="poets-list__search">
-    <mat-form-field class="form-field">
-      <input
-        matInput
-        #readWord
-        (input)="inputWords(readWord.value)"
-        type="text"
-        placeholder="Enter name poets..."
-    /></mat-form-field>
-  </div> -->
+  <div class="poets-list__search">
+    <input
+      matInput
+      #readWord
+      (input)="inputWords(readWord.value)"
+      type="text"
+      placeholder="Enter name poet or place..."
+    >
+  </div>
   <div class="poets-list__wrapper">
     <ul>
       <li
