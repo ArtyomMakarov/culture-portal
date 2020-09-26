@@ -22,7 +22,12 @@
   </div>
   <div class="videoContainer" *ngIf="author.youtube">
     <h2 class="authorDetail__sectionTitle">{{ "AUTHOR_DETAIL.H2.VIDEO" | translate }}</h2>
-    <app-video [videoUrl]="author.youtube" class="boxShadow"></app-video>
+    <!-- <app-video [videoUrl]="author.youtube" class="boxShadow"></app-video> -->
+    <a (click)="showVideo(author.youtube)" class="video-button">
+      <span class="bull">&bull;</span>
+      <span>{{ "AUTHOR_DETAIL.A.SPAN" | translate }}</span>
+      <span class="bull">&bull;</span>
+    </a>
   </div>
   <div class="mapContainer">
     <h2 class="authorDetail__sectionTitle">{{ "AUTHOR_DETAIL.H2.ACTIVITY" | translate }}</h2>

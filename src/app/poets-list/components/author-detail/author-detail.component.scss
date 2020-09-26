@@ -36,14 +36,33 @@
       font-size: medium;
     }
   }
+  .video-button {
+    font-size: 24px;
+  }
+  a.video-button:hover,
+  a.video-button:focus {
+    cursor: pointer;
+    color: $secondary-grey;
+    font-weight: bold;
+  }
+  a:-webkit-any-link {
+    color: $primary-black;
+    text-decoration: none;
+  }
+  .bull {
+    color: $primary-orange;
+    font-size: 24px;
+    margin-right: 8px;
+    margin-left: 8px;
+    padding: 1px;
+  }
   .mapContainer {
     margin: 0 auto;
     .map {
       margin: 0 auto;
       width: 80%;
-      border: 1px solod red;
+      border: 1px solid;
       box-shadow: 0 4px 8px #00000033;
     }
   }
-
 }
