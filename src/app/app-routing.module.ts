@@ -26,7 +26,7 @@ const routes: Routes = [
       {
         path: ':id',
         component: AuthorDetailComponent,
-        data: { animation: 'fade' },
+        data: { animation: 'right' },
       }
     ]
   },

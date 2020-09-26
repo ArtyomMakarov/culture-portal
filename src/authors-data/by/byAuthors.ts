@@ -10,7 +10,7 @@ export const TEAMMATES_BY: ITeammate[] = [
     github: 'pavelSaikov',
   },
   {
-    name: 'Мікіта Белякоў',
+    name: 'Мікіта',
     surname: 'Белякоў',
     city: 'Москва',
     country: 'Россия',
