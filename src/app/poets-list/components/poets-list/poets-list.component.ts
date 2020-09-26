@@ -10,9 +10,6 @@ import {
   trigger,
   transition,
   style,
-  query,
-  group,
-  animateChild,
   animate,
 } from '@angular/animations';
 
@@ -57,9 +54,8 @@ export class PoetsListComponent implements OnInit, OnDestroy {
     this.selected = id;
   }
 
-  public goToDetailedPage(name: string): void {
-    this.nameRoutePath = name.slice(name.lastIndexOf(' '));
-    this.router.navigate(['poets', this.nameRoutePath]);
+  public goToDetailedPage(id: string): void {
+    this.router.navigate(['poets', id]);
   }
 
   public ngOnInit(): void {
