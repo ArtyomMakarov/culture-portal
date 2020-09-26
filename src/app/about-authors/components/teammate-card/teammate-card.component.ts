@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 
-import { ITeammate } from '../../about-authors.models';
+import { ITeammate } from '../../models/about-authors.models';
 
 @Component({
   selector: 'app-teammate-card',

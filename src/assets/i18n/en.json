@@ -32,5 +32,9 @@
     "A": {
       "SPAN": "Watch on YouTube"
     }
+  },
+  "ABOUT_AUTHORS": {
+    "TEAM": "Our Team",
+    "WORKLOG": "Worklog"
   }
 }
