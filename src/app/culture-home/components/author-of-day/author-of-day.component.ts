@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { poets } from '../../../../poets-data/ru/poets';
+import ruPoets from '../../../../poets-data/ru/index.ru';
+import byPoets from '../../../../poets-data/ru/index.ru';
+import enPoets from '../../../../poets-data/ru/index.ru';
 
 @Component({
   selector: 'app-author-of-day',
@@ -9,9 +11,9 @@ import { poets } from '../../../../poets-data/ru/poets';
 export class AuthorOfDayComponent implements OnInit {
   date = new Date();
   i = this.date.getDay();
-  model = poets;
+  model = ruPoets;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void { }
+  ngOnInit(): void {}
 }

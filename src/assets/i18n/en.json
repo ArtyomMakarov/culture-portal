@@ -12,7 +12,7 @@
       "P": "Culture Portal is a website about famous belorussian poets. Here you can find information about their biography."
     },
     "AUTHOR_OF_DAY": {
-      "span": "learn more"
+      "SPAN": "learn more"
     }
   },
   "POETS_LIST": {
@@ -20,7 +20,7 @@
       "placeholder": "Enter name or place"
     }
   },
- "AUTHOR_DETAIL": {
+  "AUTHOR_DETAIL": {
     "H2": {
       "TIMELINE": "Biography",
       "WORKS": "Works",

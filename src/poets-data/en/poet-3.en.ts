@@ -1,12 +1,11 @@
 import { IAuthor } from '../../app/core/models/authors-model';
 
 export const poet: IAuthor = {
-  id: "Marina_Mikhailovna",
+  id: 'Marina_Veselukha',
   name: 'Marina Mikhailovna Veselukha',
   liveTime: 'July 15, 1987, Miory, Vitebsk region - xxxx',
   photo: './assets/img/poets-img/VesjaluchaMaryna.jpg',
-  biography:
-    'Belarusian literary critic, literary critic, poet, translator',
+  biography: 'Belarusian literary critic, literary critic, poet, translator',
   timeline: [
     {
       date: '2004',
@@ -36,8 +35,7 @@ export const poet: IAuthor = {
     },
     {
       date: '2013',
-      work:
-        'One of the winners of the young critics name Adam Babareka.',
+      work: 'One of the winners of the young critics name Adam Babareka.',
     },
     {
       date: '2015',

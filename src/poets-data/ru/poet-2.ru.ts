@@ -1,7 +1,7 @@
 import { IAuthor } from '../../app/core/models/authors-model';
 
 export const poet: IAuthor = {
-  id: "Anatoly_Stepanovich",
+  id: 'Anatoly_Melugin',
   name: 'Анатолий Степанович Велюгин',
   liveTime: '27 декабря 1923 - 24 октября 1994 (70 лет)',
   photo: './assets/img/poets-img/Vialugin.jpg',

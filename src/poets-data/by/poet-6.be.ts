@@ -1,7 +1,7 @@
 import { IAuthor } from '../../app/core/models/authors-model';
 
 export const poet: IAuthor = {
-  id: "Girsh_Solomonovich",
+  id: 'Girsh_Relay s',
   name: 'Гірш Саламонавіч Рэлес',
   liveTime: '23 красавіка 1913 - 18 верасня 2004 (91 год)',
   photo: './assets/img/poets-img/Reles_G.jpg',
@@ -11,7 +11,7 @@ export const poet: IAuthor = {
     {
       date: '1913',
       description:
-        'Нарадзіўся ў сям\'і меламеда (настаўніка ў хедэры) і паэта на іўрыце Лейба Релеса ў Чашніках',
+        "Нарадзіўся ў сям'і меламеда (настаўніка ў хедэры) і паэта на іўрыце Лейба Релеса ў Чашніках",
     },
     {
       date: '1930',
