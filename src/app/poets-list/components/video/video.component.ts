@@ -7,6 +7,6 @@ import { Component, Input } from '@angular/core';
 })
 export class VideoComponent {
   @Input() public videoUrl: string;
-  @Input() public width: number;
-  @Input() public height: number;
+  @Input() public width: number = 1000;
+  @Input() public height: number = 750;
 }
