@@ -1,23 +1,29 @@
 <header>
   <nav class="header-container">
-    <img
-      mat-card-image
-      src="assets/img/logo_poets2.png"
-      alt="logo poets"
-    />
+    <img mat-card-image src="assets/img/logo_poets2.png" alt="logo poets" [ngClass]="isFade ? 'sm':'md'"/>
     <div class="header-nav">
-      <a routerLink="/home" class="nav">{{ "HEADER.NAV.HOME" | translate }}</a
-      ><span class="bull">&bull;</span>
-      <a routerLink="/poets" class="nav">{{ "HEADER.NAV.POETS" | translate }}</a
-      ><span class="bull">&bull;</span>
-      <a routerLink="/about-team" class="nav">{{ "HEADER.NAV.ABOUT" | translate }}</a>
+
+      <a routerLink="/home" class="nav" [class.nav_active]="isActive('home')">
+        {{ "HEADER.NAV.HOME" | translate }}
+      </a>
+
+      <span class="bull">&bull;</span>
+
+      <a routerLink="/poets" class="nav" [class.nav_active]="isActive('poets')">
+        {{ "HEADER.NAV.POETS" | translate }}
+      </a>
+
+      <span class="bull">&bull;</span>
+
+      <a routerLink="/about-team" class="nav" [class.nav_active]="isActive('about-team')">
+        {{ "HEADER.NAV.ABOUT" | translate }}
+      </a>
+
     </div>
     <select class="select-language" #myLanguage (change)="selectLanguage(myLanguage.value)">
-      <option class="option"
-              *ngFor='let language of languageArr'
-              [value]="language">{{language}}</option>
+      <option class="option" *ngFor='let language of languageArr' [value]="language">{{language}}</option>
     </select>
   </nav>
 
-  <div class="blur-bck"></div>
+  <div class="blur-bck" [class.fade]="isFade"></div>
 </header>
