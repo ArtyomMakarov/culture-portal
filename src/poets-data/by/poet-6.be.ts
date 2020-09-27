@@ -4,7 +4,7 @@ export const poet: IAuthor = {
   id: 'Girsh_Relay s',
   name: 'Гірш Саламонавіч Рэлес',
   liveTime: '23 красавіка 1913 - 18 верасня 2004 (91 год)',
-  photo: './assets/img/poets-img/Reles_G.jpg',
+  photo: './assets/img/poets-img/Reles.jpg',
   biography:
     'Габрэйскі пісьменнік, пісаў на мове ідыш, беларускай і рускай мовах.',
   timeline: [

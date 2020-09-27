@@ -4,7 +4,7 @@ export const poet: IAuthor = {
   id: 'Marina_Veselukha',
   name: 'Марина Михайловна Веселуха',
   liveTime: '15 июля 1987, Миоры, Витебская область - xxxx',
-  photo: './assets/img/poets-img/VesjaluchaMaryna.jpg',
+  photo: './assets/img/poets-img/Vesjalucha.jpg',
   biography: 'белорусский литературный критик, литературовед, поэт, переводчик',
   timeline: [
     {

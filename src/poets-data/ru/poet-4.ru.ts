@@ -4,7 +4,7 @@ export const poet: IAuthor = {
   id: 'Vladimir_Adamchik',
   name: 'Влади́мир Вячесла́вович Ада́мчик',
   liveTime: '29 сентября 1958 (61 год) - xxxx',
-  photo: './assets/img/poets-img/Adam_Globus.jpg',
+  photo: './assets/img/poets-img/Adamchik.jpg',
   biography: 'советский и белорусский писатель, поэт, художник, издатель',
   timeline: [
     {

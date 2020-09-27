@@ -4,7 +4,7 @@ export const poet: IAuthor = {
   id: 'Girsh_Relay s',
   name: 'Гирш Соломонович Релес',
   liveTime: '23 апреля 1913 - 18 сентября 2004 (91 год)',
-  photo: './assets/img/poets-img/Reles_G.jpg',
+  photo: './assets/img/poets-img/Reles.jpg',
   biography:
     'еврейский писатель, писал на идише, белорусском и русском языках.',
   timeline: [

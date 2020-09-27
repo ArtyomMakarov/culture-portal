@@ -4,7 +4,7 @@ export const poet: IAuthor = {
   id: "Timothy_Krys'ko",
   name: 'Цімафей Васільевіч Крысько',
   liveTime: '16 мая 1911 - 5 ліпеня 1996 (85 гадоў)',
-  photo: './assets/img/poets-img/Vitka_Vas.jpg',
+  photo: './assets/img/poets-img/Vitka.jpg',
   biography:
     'савецкі беларускі паэт, драматург, крытык, перакладчык, класік беларускай дзіцячай літаратуры',
   timeline: [

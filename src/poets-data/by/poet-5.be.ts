@@ -4,7 +4,7 @@ export const poet: IAuthor = {
   id: 'Yuri_Gumenyuk',
   name: 'Юрый Ігаравіч Гумянюк',
   liveTime: '24 верасня 1969 — 19 студзеня 2013 года',
-  photo: './assets/img/poets-img/Juryj_Humianiuk_w_Warszawie_4.jpg',
+  photo: './assets/img/poets-img/Humianiuk.jpg',
   biography: 'Беларускі паэт, празаік, журналіст',
   timeline: [
     {
