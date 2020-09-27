@@ -2,9 +2,9 @@ import { IAuthor } from '../../app/core/models/authors-model';
 
 export const poet: IAuthor = {
   id: 'Anatoly_Melugin',
-  name: 'Anatoly Stepanovich Melugin',
+  name: 'Anatoly Stepanovich Velugin',
   liveTime: '27 December 1923 - 24 October 1994 (70 лет)',
-  photo: './assets/img/poets-img/Vialugin.jpg',
+  photo: './assets/img/poets-img/Velugin.jpg',
   biography:
     'Belarusian Soviet poet, novelist and translator, screenwriter. Winner of the Yanka Kupala Literary award (1964)',
   timeline: [

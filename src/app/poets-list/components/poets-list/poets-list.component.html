@@ -8,24 +8,23 @@
       placeholder="Enter name poet or place..."
     >
   </div>
-  <div class="poets-list__wrapper">
-    <ul>
-      <li
-        *ngFor="let author of authorsList | searchAuthor: keyWord;"
-        class="list">
-
-        <span
-          (mouseenter)="selectAuthor(author.id)"
-          (click)="goToDetailedPage(author.id)">
-            {{ author.name }}
-        </span>
-
-        <div class="photo" *ngIf="selected === author.id">
-          <img @show [src]="author.photo" alt="author">
+  <div class="opacity-block">
+    <div class="poets-list__wrapper">
+      <!-- <ul> -->
+        <div
+          *ngFor="let author of authorsList | searchAuthor: keyWord;"
+          class="list">
+          <span
+            (mouseenter)="selectAuthor(author.id)"
+            (click)="goToDetailedPage(author.id)">
+              {{ author.name }}
+          </span>
+          <div class="photo" *ngIf="selected === author.id">
+            <img @show [src]="author.photo" alt="author">
+          </div>
         </div>
-      </li>
-    </ul>
-
-    <div class="skewed"></div>
+      <!-- </ul> -->
+      <div class="skewed"></div>
+    </div>
   </div>
 </div>

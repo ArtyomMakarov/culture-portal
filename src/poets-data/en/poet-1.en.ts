@@ -4,7 +4,7 @@ export const poet: IAuthor = {
   id: "Timothy_Krys'ko",
   name: "Timothy Vasilyevich Krys'ko",
   liveTime: '	16 May 1911 - 5 July 1996 (85 лет)',
-  photo: './assets/img/poets-img/Vitka_Vas.jpg',
+  photo: './assets/img/poets-img/Vitka.jpg',
   biography:
     "soviet belarusian poet, playwright, critic, translator, classic of Belarusian children's literature",
   timeline: [

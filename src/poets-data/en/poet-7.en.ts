@@ -4,7 +4,7 @@ export const poet: IAuthor = {
   id: 'Alexander_Poskrebyshev',
   name: 'Alexander Stepanovich Poskrebyshev',
   liveTime: 'April 13, 1935 - August 6, 2007 (72 years old)',
-  photo: './assets/img/poets-img/Poskrebyshev_A_S.jpg',
+  photo: './assets/img/poets-img/Poskrebyshev.jpg',
   biography: "Belarusian novelist, poet, children's writer.",
   timeline: [
     {

@@ -4,7 +4,7 @@ export const poet: IAuthor = {
   id: 'Anatoly_Melugin',
   name: 'Анатолий Степанович Велюгин',
   liveTime: '27 декабря 1923 - 24 октября 1994 (70 лет)',
-  photo: './assets/img/poets-img/Vialugin.jpg',
+  photo: './assets/img/poets-img/Velugin.jpg',
   biography:
     'белорусский советский поэт, прозаик и переводчик, киносценарист. Лауреат Литературной премии имени Янки Купалы (1964)',
   timeline: [
