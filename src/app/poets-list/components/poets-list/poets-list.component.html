@@ -5,12 +5,11 @@
       #readWord
       (input)="inputWords(readWord.value)"
       type="text"
-      placeholder="Enter name poet or place..."
+      placeholder="Enter name poet..."
     >
   </div>
   <div class="opacity-block">
     <div class="poets-list__wrapper">
-      <!-- <ul> -->
         <div
           *ngFor="let author of authorsList | searchAuthor: keyWord; let i = index"
           class="list">
@@ -24,7 +23,6 @@
             <img @show [src]="author.photo" alt="author">
           </div>
         </div>
-      <!-- </ul> -->
       <div class="skewed"></div>
     </div>
   </div>

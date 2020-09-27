@@ -58,9 +58,9 @@
     margin: 30px auto;
     padding: 0;
     outline: none;
-    border: 0.5px solid #484745;
-    color: #484745;
-    background-color: $primary-blue;
+    background: $primary-blue;
+    color: $primary-white;
+    border-radius: 5px;
     text-decoration: none;
     cursor: pointer;
   }
@@ -71,6 +71,7 @@
   }
   &__inner-link-span:hover {
     background-color: $secondary-blue;
+    border-radius: 5px;
   }
   &__biography {
     color: $secondary-black;

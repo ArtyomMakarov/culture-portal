@@ -18,7 +18,7 @@
   },
   "POETS_LIST": {
     "INPUT": {
-      "placeholder": "Enter name or place"
+      "placeholder": "Enter name poet..."
     }
   },
   "AUTHOR_DETAIL": {
