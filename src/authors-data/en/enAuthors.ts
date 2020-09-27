@@ -1,4 +1,4 @@
-import {ITeammate} from "../../app/about-authors/models/about-authors.models";
+import { ITeammate } from '../../app/about-authors/models/about-authors.models';
 
 export const TEAMMATES_EN: ITeammate[] = [
   {
