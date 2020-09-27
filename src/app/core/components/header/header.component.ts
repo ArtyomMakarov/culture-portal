@@ -10,10 +10,20 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent {
   public languageArr: Array<string> = CommonConstants.LANGUAGE_ARR;
+  public isFade: boolean = false;
 
   constructor(
     public translate: TranslateService,
-    private router: Router) {}
+    private router: Router) {
+      window.onscroll = () => {
+        if(!this.isFade && window.pageYOffset > 130) {
+          this.isFade = true;
+        }
+        else if (this.isFade && window.pageYOffset < 130) {
+          this.isFade = false;
+        }
+      }
+    }
 
   public selectLanguage(val: string) {
     this.translate.use(val.toLowerCase());
