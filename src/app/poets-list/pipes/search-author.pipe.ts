@@ -11,6 +11,7 @@ export class SearchAuthorPipe implements PipeTransform {
     if (!allAuthors || !words) {
       return allAuthors;
     }
+    console.log(allAuthors, '-', words);
     return allAuthors.filter((element) => element.name.toLowerCase().includes(words.toLowerCase()));
   }
 
