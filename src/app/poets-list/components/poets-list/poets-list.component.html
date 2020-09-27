@@ -12,9 +12,10 @@
     <div class="poets-list__wrapper">
       <!-- <ul> -->
         <div
-          *ngFor="let author of authorsList | searchAuthor: keyWord;"
+          *ngFor="let author of authorsList | searchAuthor: keyWord; let i = index"
           class="list">
           <span
+            [style.paddingLeft]="i * 20 + 'px'"
             (mouseenter)="selectAuthor(author.id)"
             (click)="goToDetailedPage(author.id)">
               {{ author.name }}
