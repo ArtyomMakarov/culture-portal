@@ -7,11 +7,10 @@ import { IAuthor } from '../../core/models/authors-model';
 })
 export class SearchAuthorPipe implements PipeTransform {
 
-  transform(allAuthors: IAuthor[], words: string): unknown {
-    if (!allAuthors || !words) {
+  transform(allAuthors: IAuthor[], words: string): IAuthor[] {
+    if (!words) {
       return allAuthors;
     }
-    console.log(allAuthors, '-', words);
     return allAuthors.filter((element) => element.name.toLowerCase().includes(words.toLowerCase()));
   }
 
