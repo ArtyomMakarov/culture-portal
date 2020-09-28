@@ -7,11 +7,22 @@ import { IAuthor } from '../../core/models/authors-model';
 })
 export class SearchAuthorPipe implements PipeTransform {
 
-  transform(allAuthors: IAuthor[], words: string): IAuthor[] {
-    if (!words) {
+  transform(allAuthors: IAuthor[], keyWords: string = ''): IAuthor[] {
+    if (!keyWords || !allAuthors) {
       return allAuthors;
     }
-    return allAuthors.filter((element) => element.name.toLowerCase().includes(words.toLowerCase()));
-  }
+    const lowerKeyWords: string = keyWords.toLowerCase();
+    return allAuthors.filter(( poet ) =>
+    {
+      function isIncludes(str: string): boolean {
+        return str.toLowerCase().includes(lowerKeyWords);
+      }
 
+      const onCheck: string[] = [
+        poet.name,
+        poet.timeline[0].description,
+      ];
+      return onCheck.some(isIncludes);
+    });
+  }
 }
