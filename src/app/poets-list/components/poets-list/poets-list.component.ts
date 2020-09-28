@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import { Component, OnDestroy, Input, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { Subscription } from 'rxjs';
@@ -34,7 +34,7 @@ interface Iphoto {
 export class PoetsListComponent implements OnInit, OnDestroy {
   private subscription: Subscription;
   public authorsList: IAuthor[];
-  public keyWord: string;
+  @Input() public keyWord: string;
   public selected: string;
   public nameRoutePath: string;
 
@@ -42,14 +42,7 @@ export class PoetsListComponent implements OnInit, OnDestroy {
     private authors: AuthorsService,
     public translate: TranslateService,
     public router: Router
-  ) { }
-
-  public inputWords(query: string): void {
-    query = query.trim();
-    if (query) {
-      this.keyWord = query;
-    }
-  }
+  ) {  }
 
   public selectAuthor(id: string): void {
     this.selected = id;

@@ -2,8 +2,7 @@
   <div class="poets-list__search">
     <input
       matInput
-      #readWord
-      (input)="inputWords(readWord.value)"
+      [(ngModel)]="keyWord"
       type="text"
       placeholder="{{ 'POETS_LIST.INPUT.placeholder' | translate }}"
     >
