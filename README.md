@@ -29,7 +29,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## WorkLog
 Pavel Saikov
 | time spent |feature                                                |                     
-|:-----------|------------------------------------------------------:|
+|:----------:|:-----------------------------------------------------:|
 |    1h      |add routing                                            |
 |    5h      |about authors page                                     |
 |    2h      |add gallery component                                  |
