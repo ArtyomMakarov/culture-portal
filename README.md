@@ -37,7 +37,7 @@ Pavel Saikov
 
 Tatiana Kastrubai 
 | time spent |feature                                                |                     
-|:------------------:| ---------------------------------------------:|
+|:----------:|:-----------------------------------------------------:|
 |    2h      |app design                                             |
 |    4h      |app logo and header                                    |
 |    2h      |base structure for poets page                          |
@@ -47,7 +47,7 @@ Tatiana Kastrubai
 
 Artsem Makarov
 | time spent |feature                                                |                     
-|:------------------:| ---------------------------------------------:|
+|:----------:|:-----------------------------------------------------:|
 |    0.5h    |initialize project repository                          |
 |    3h      |add material theme, colors and fonts                   |
 |    1.5h    |greetings component                                    |
@@ -57,7 +57,7 @@ Artsem Makarov
 
 Konstantin Kravtsov
 | time spent |feature                                                |                     
-|:------------------:| ---------------------------------------------:|
+|:----------:|:-----------------------------------------------------:|
 |    3h      |base app interfaces and info about poets               |
 |    4h      |widget with random author                              |
 |    2h      |adaptive design for widget with random author          |
@@ -66,7 +66,7 @@ Konstantin Kravtsov
 
 Nikita Belykov
 | time spent |feature                                                |                     
-|:------------------:| ---------------------------------------------:|
+|:----------:|:-----------------------------------------------------:|
 |    3h      |project structure                                      |
 |    2h      |translation library                                    |
 |    4h      |implement modules for map, home page and translator    |
