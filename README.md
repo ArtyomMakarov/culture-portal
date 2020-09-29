@@ -26,10 +26,31 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
-
+## WorkLog
+Pavel Saikov
 | time spent |feature                      |                     
 |:------------------:| -------------------:|
-|    8asdasdh      |baasdasdse struasdasdasdcture of the pasdasdroject|
-|    4asdasdh     |maasdasdasdin funasdasdasdctional              |
-|    16hasdasd     |testsadsads                        |
-|    10asdasdh     |asdasdasdasdasdasdasdsa        |
+|    1h      |add routing|
+|    5h      |about authors page|
+|    2h     |add gallery component|
+|    1.5h     |add video component|
+
+Tatiana Kastrubai
+| time spent |feature                      |                     
+|:------------------:| -------------------:|
+|    2h      |app design|
+|    4h      |app logo and header|
+|    2h     |base structure for poets page|
+|    1h     |search field for poets page|
+|    4h     |page with author detailed description|
+|    1.5h     |routing for poets pages|
+
+Artsem Makarov
+| time spent |feature                      |                     
+|:------------------:| -------------------:|
+|    0.5h      |initialize project repository|
+|    3h      |add material theme, colors and fonts|
+|    1.5h     |greetings component|
+|    1.5h     |adaptive design for greetings component, header styles|
+|    2h     |implement timeline component|
+|    1.5h     |translate about authors page|
