@@ -10,10 +10,9 @@
   <div class="opacity-block">
     <div class="poets-list__wrapper">
         <div
-          *ngFor="let author of authorsList | searchAuthor: keyWord; let i = index"
+          *ngFor="let author of authorsList | searchAuthor: keyWord;"
           class="list">
           <span
-            [style.paddingLeft]="i * 20 + 'px'"
             (mouseenter)="selectAuthor(author.id)"
             (click)="goToDetailedPage(author.id)">
               {{ author.name }}
@@ -24,5 +23,7 @@
         </div>
       <div class="skewed"></div>
     </div>
+
+    <div class="background"></div>
   </div>
 </div>

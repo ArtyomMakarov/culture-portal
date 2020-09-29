@@ -16,10 +16,10 @@ export class HeaderComponent {
     public translate: TranslateService,
     private router: Router) {
       window.onscroll = () => {
-        if(!this.isFade && window.pageYOffset > 130) {
+        if(!this.isFade && window.pageYOffset > 150) {
           this.isFade = true;
         }
-        else if (this.isFade && window.pageYOffset < 130) {
+        else if (this.isFade && window.pageYOffset < 150) {
           this.isFade = false;
         }
       }

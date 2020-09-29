@@ -3,12 +3,12 @@
 footer {
   width: 100%;
   height: 100px;
-  background-color: black;
+  background-color: $secondary-grey;
   display: flex;
   align-items: center;
 }
 
 .copyright {
-  color: $primary-white;
+  color: white;
   margin-left: 50px;
 }

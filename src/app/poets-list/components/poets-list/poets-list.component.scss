@@ -2,22 +2,23 @@
 
 input[type="text"] {
   position: relative;
-  top: 80px;
   z-index: 3;
   width: 300px;
+  top: 80px;
   padding: 16px;
   border-radius: 5px;
   border: 0;
-  box-shadow: 0 0 15px 4px rgba(61, 60, 60, 0.568);
+  outline: none;
+  box-shadow: 0 0 4px rgba(61, 60, 60);
   @media screen and (max-width: 620px) {
-    top: 50px;
+    top: 60px;
   }
 }
 .poets-list {
   width: 100%;
   height: 100%;
   z-index: -3;
-  background: no-repeat top 100px center url('../../../../assets/img/poets-img/list-poets.jpg');
+  background: no-repeat center url('../../../../assets/img/poets-img/list-poets.jpg');
   background-attachment: fixed;
   background-size: cover;
   padding-top: 50px;
@@ -63,12 +64,17 @@ input[type="text"] {
 .opacity-block {
   width: 100%;
   height: 100%;
-  background: rgb(210 212 212 / 61%);
   display: flex;
   justify-content: center;
   align-items: center;
-  box-sizing: border-box;
-  padding: 0 40px;
+}
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(210 212 212 / 61%);
 }
 .photo {
   position: absolute;
@@ -101,7 +107,6 @@ input[type="text"] {
   height: 100%;
   width: 85%;
   transform: skew(10deg);
-
   @media screen and (max-width: 1020px) {
     right: 45%;
   }

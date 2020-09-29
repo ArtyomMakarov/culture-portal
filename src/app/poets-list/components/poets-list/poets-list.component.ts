@@ -1,4 +1,4 @@
-import { Component, OnDestroy, Input, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import { Component, OnDestroy, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { Subscription } from 'rxjs';
@@ -12,10 +12,6 @@ import {
   style,
   animate,
 } from '@angular/animations';
-
-interface Iphoto {
-  photo: string;
-}
 
 @Component({
   selector: 'app-poets-list',
@@ -34,7 +30,7 @@ interface Iphoto {
 export class PoetsListComponent implements OnInit, OnDestroy {
   private subscription: Subscription;
   public authorsList: IAuthor[];
-  @Input() public keyWord: string;
+  public keyWord: string;
   public selected: string;
   public nameRoutePath: string;
 
