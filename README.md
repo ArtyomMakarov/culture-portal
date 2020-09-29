@@ -73,3 +73,9 @@ Nikita Belykov
 |    1h      |animated routing                                       |
 |    1h      |add 'scully' library                                   |
 |    1.5h    |add routing animation for 'author' page                |
+
+Gleb Zhidovich
+| time spent |feature                                                |                     
+|:----------:|:-----------------------------------------------------:|
+|    1h      |interrupt / split poets across different files         |
+|    2h      |add works component to poets list module               |
