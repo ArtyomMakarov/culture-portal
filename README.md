@@ -35,7 +35,7 @@ Pavel Saikov
 |    2h     |add gallery component|
 |    1.5h     |add video component|
 
-Tatiana Kastrubai
+Tatiana Kastrubai 
 | time spent |feature                      |                     
 |:------------------:| -------------------:|
 |    2h      |app design|
@@ -54,3 +54,22 @@ Artsem Makarov
 |    1.5h     |adaptive design for greetings component, header styles|
 |    2h     |implement timeline component|
 |    1.5h     |translate about authors page|
+
+Konstantin Kravtsov
+| time spent |feature                      |                     
+|:------------------:| -------------------:|
+|    3h      |base app interfaces and info about poets|
+|    4h      |widget with random author|
+|    2h     |adaptive design for widget with random author|
+|    2h     |add photo gallery and video on author page|
+|    1h     |implement translation in widget|
+
+Nikita Belykov
+| time spent |feature                      |                     
+|:------------------:| -------------------:|
+|    3h      |project structure|
+|    2h      |translation library|
+|    4h     |implement modules for map, home page and translator|
+|    1h     |animated routing|
+|    1h     |add 'scully' library|
+|    1.5h     |add routing animation for 'author' page|
