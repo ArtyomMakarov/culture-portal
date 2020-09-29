@@ -34,8 +34,8 @@ Pavel Saikov                                                           Tatiana K
 |    5h      |about authors page                                     |    4h      |app logo and header                                    |
 |    2h      |add gallery component                                  |    2h      |base structure for poets page                          |
 |    1.5h    |add video component                                    |    1h      |search field for poets page                            |
-                                                                     |    4h      |page with author detailed description                  |
-                                                                     |    1.5h    |routing for poets pages                                |
+|            |                                                       |    4h      |page with author detailed description                  |
+|            |                                                       |    1.5h    |routing for poets pages                                |
 
 Artsem Makarov
 | time spent |feature                                                |                     
